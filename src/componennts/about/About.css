@@ -1,0 +1,32 @@
+.about_card {
+  display: flex;
+  gap: 0.4rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 2rem 2rem 2rem;
+  flex: 1 1 0px;
+
+  background-color: rgba(42, 104, 170, 0.557);
+  border: rgba(255, 255, 255, 0) 0.1px solid;
+  border-radius: 4%;
+  overflow: hidden;
+}
+
+.about_card:hover {
+  background-color: rgba(42, 104, 170, 0.2);
+  border: white 0.1px solid;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+h4 {
+  margin: 2rem;
+}
+
+.info_descr {
+  margin-top: 1rem;
+}
