@@ -14,12 +14,14 @@
 }
 
 .project_card img:hover {
-  width: 30%;
-  height: 100%;
+  width: 30vh;
+  height: 60vh;
   transition: var(--transition);
 }
 
 .react_projects_container {
   display: flex;
-  gap: 2rem;
+  justify-content: space-around;
+
+  padding-top: 2rem;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import "./Projects.css";
 import WeatherApp from "./../../assets/FullApp.png";
 import Dummy from "./../../assets/dummy.png";
+import Dummy2 from "./../../assets/dummy2.png";
 
 const Projects = () => {
   return (
@@ -16,6 +17,10 @@ const Projects = () => {
           <div className="project_card">
             <img src={Dummy} />
             <h5>Dummy App</h5>
+          </div>
+          <div className="project_card">
+            <img src={Dummy2} />
+            <h5>Dummy App 2</h5>
           </div>
         </div>
 
