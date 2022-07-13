@@ -1,0 +1,25 @@
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-card {
+  height: 15vh;
+  width: 15vh;
+  background: var(--color-bg-c);
+  border-radius: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px var(--color-white) solid;
+}
+
+.contact-card a {
+  font-size: 3rem;
+}
+
+.contact-container {
+  display: flex;
+}
