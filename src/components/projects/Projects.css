@@ -1,0 +1,25 @@
+.project_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 0px;
+  gap: 1rem;
+}
+
+.project_card img {
+  border-radius: 1rem;
+  width: 20vh;
+  height: 40vh;
+  transition: var(--transition);
+}
+
+.project_card img:hover {
+  width: 30%;
+  height: 100%;
+  transition: var(--transition);
+}
+
+.react_projects_container {
+  display: flex;
+  gap: 2rem;
+}

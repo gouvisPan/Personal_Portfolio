@@ -1,10 +1,11 @@
 .about_card {
   display: flex;
-  gap: 0.4rem;
+  gap: 0.2rem;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 2rem 2rem 2rem;
+  padding: 1rem 1rem 1rem 1rem;
   flex: 1 1 0px;
+  height: 20vh;
 
   background-color: rgba(42, 104, 170, 0.557);
   border: rgba(255, 255, 255, 0) 0.1px solid;
@@ -12,15 +13,35 @@
   overflow: hidden;
 }
 
+.about_container {
+  display: flex;
+  gap: 3rem;
+}
+
 .about_card:hover {
   background-color: rgba(42, 104, 170, 0.2);
   border: white 0.1px solid;
+  transition: var(--transition);
 }
 
 .info {
-  display: flex;
+  flex: 0 0 0.2;
+}
+
+.info p {
+  font-size: 12px;
+}
+
+.cards_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 2rem;
+  padding: 2rem;
+  margin: 0 1rem 0 1rem;
+
+  background: rgba(102, 102, 102, 0.253);
+  border-radius: 5px;
 }
 
 h4 {
@@ -29,4 +50,21 @@ h4 {
 
 .info_descr {
   margin-top: 1rem;
+}
+
+.me_img {
+  height: 35vh;
+  width: 35vh;
+  overflow: hidden;
+  border-radius: 2rem;
+  transform: rotate(5deg);
+  transition: var(--transition);
+}
+
+.me_img:hover {
+  transform: rotate(0deg);
+}
+
+.me_con {
+  flex: 0 0 0.8;
 }
