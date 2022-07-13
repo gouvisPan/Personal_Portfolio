@@ -5,8 +5,8 @@
 }
 
 .contact-card {
-  height: 15vh;
-  width: 15vh;
+  height: 20vh;
+  width: 20vh;
   background: var(--color-bg-c);
   border-radius: 2rem;
 
@@ -14,12 +14,46 @@
   justify-content: center;
   align-items: center;
   border: 0.5px var(--color-white) solid;
+  transition: var(--transition);
 }
 
 .contact-card a {
-  font-size: 3rem;
+  font-size: 2rem;
+  margin-top: .5rem;
 }
+
 
 .contact-container {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
+  
+
+}
+
+.contact-me{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.desc-container{
+  display: none;
+}
+
+.desc-container-hovered{
+  display: block;
+}
+
+.contact-card:hover {
+  height: 40vh;
+  width: 40vh;
+  background: var(--color-bg-c);
+  border-radius: 2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px var(--color-white) solid;
+  transition: var(--transition);
 }
