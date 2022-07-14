@@ -11,49 +11,44 @@
   border-radius: 2rem;
 
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 0.5px var(--color-white) solid;
   transition: var(--transition);
 }
 
-.contact-card a {
-  font-size: 2rem;
-  margin-top: .5rem;
+.contact-container a {
+  font-size: 3rem;
+  margin-top: 0.5rem;
 }
-
 
 .contact-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  
-
 }
 
-.contact-me{
+.contact-me {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.desc-container{
+.desc-container {
   display: none;
-}
-
-.desc-container-hovered{
-  display: block;
+  transition: var(--transition);
 }
 
 .contact-card:hover {
-  height: 40vh;
-  width: 40vh;
-  background: var(--color-bg-c);
-  border-radius: 2rem;
+  height: 20vh;
+  width: 20vh;
+  background: var(--color-light);
+  border-radius: 6rem;
 
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 0.5px var(--color-white) solid;
-  transition: var(--transition);
+  border: px var(--color-primary) solid;
+  transition: var(--transition-fast);
 }

@@ -37,6 +37,20 @@ header {
   justify-content: center;
 }
 
+.tagcloud {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 650;
+  margin-left: 30%;
+}
+.tagcloud--item:hover {
+  color: #36454f;
+}
+
+.header_container h1,
+h5 {
+  margin-bottom: 0.5rem;
+}
 /* ==== SMARTPHONES ==== */
 
 @media screen and (max-width: 600px) {

@@ -37,6 +37,7 @@ code {
   --container-width-small: 90%;
 
   --transition: all 400ms ease;
+  --transition-fast: all 300ms ease;
 }
 
 ::-webkit-scrollbar {
