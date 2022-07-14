@@ -40,7 +40,7 @@ code {
   --container-width-mid: 86%;
   --container-width-small: 90%;
 
-  --transition-slow: all 100ms ease;
+  --transition-slow: all 900ms ease;
   --transition: all 400ms ease;
   --transition-fast: all 300ms ease;
   
