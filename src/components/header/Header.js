@@ -10,15 +10,13 @@ const Header = () => {
   return (
     <header id="home">
       <div className="container.header__container"> </div>
-      <h5>
-        <Typewriter text="Hallo, my name is" cursor={false} speed={90} />
-      </h5>
+      <h5>Hallo, my name is</h5>
       <h1>
         <Typewriter
           text="Panagiotis Gouvis"
           cursor={false}
           speed={70}
-          delay={900}
+          delay={100}
         />
       </h1>
       <h5 className="text-light">Frontend Developer</h5>

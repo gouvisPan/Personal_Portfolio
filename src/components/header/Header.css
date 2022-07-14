@@ -10,7 +10,7 @@ header {
 }
 
 .cv_sec {
-  margin-top: 3rem;
+  margin-top: 2rem;
 
   display: flex;
   gap: 1rem;
@@ -35,6 +35,8 @@ header {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+
+  margin-top: 1rem;
 }
 
 .tagcloud {
@@ -49,8 +51,9 @@ header {
 
 .header_container h1,
 h5 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
+
 /* ==== SMARTPHONES ==== */
 
 @media screen and (max-width: 600px) {
