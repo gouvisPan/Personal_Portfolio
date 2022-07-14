@@ -14,7 +14,6 @@ const Contact = () => {
       <h4>Find Me</h4>
       <div className="contact-container">
         <div className="find-me">
-          <div className="links-container">
             <ContactCard
               link="https://linkedin.com"
               desc="Send me a direct message in facebook messenger"
@@ -33,7 +32,7 @@ const Contact = () => {
             >
               <FiFacebook />
             </ContactCard>
-          </div>
+          
         </div>
 
         <div className="contact-me">

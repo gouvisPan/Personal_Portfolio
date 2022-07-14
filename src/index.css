@@ -6,7 +6,7 @@ body {
   color: var(--color-white);
   line-height: 1.6;
   background-color: #060125;
-background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-big.png");
+ background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-big.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 
 }
@@ -30,6 +30,7 @@ code {
 :root {
   --color-bg: #1f1f38;
   --color-bg-c: #2c2c6c;
+  --color-bg-c-t: #2c2c6c8f;
   --color-primary: #2a68aa;
   --color-primary-c: #13136a;
   --color-white: #fff;
@@ -39,8 +40,10 @@ code {
   --container-width-mid: 86%;
   --container-width-small: 90%;
 
+  --transition-slow: all 100ms ease;
   --transition: all 400ms ease;
   --transition-fast: all 300ms ease;
+  
 }
 
 ::-webkit-scrollbar {

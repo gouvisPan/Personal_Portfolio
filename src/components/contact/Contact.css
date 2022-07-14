@@ -1,12 +1,19 @@
-.links-container {
+.find-me {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
+}
+
+.contact-me {
+  margin-top: 12vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .contact-card {
-  height: 20vh;
-  width: 20vh;
+  height: 18vh;
+  width: 18vh;
   background: var(--color-bg-c);
   border-radius: 2rem;
 
@@ -16,7 +23,18 @@
   align-items: center;
   border: 0.5px var(--color-white) solid;
   transition: var(--transition);
+
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  color: white;
 }
+
 
 .contact-container a {
   font-size: 3rem;
@@ -26,14 +44,13 @@
 .contact-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  gap:8rem;
+  justify-content: center;
+
+  margin-top: -2rem;
 }
 
-.contact-me {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
+
 
 .desc-container {
   display: none;
@@ -41,14 +58,39 @@
 }
 
 .contact-card:hover {
-  height: 20vh;
-  width: 20vh;
-  background: var(--color-light);
-  border-radius: 6rem;
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: var(--color-bg-c-t);
+
   border: px var(--color-primary) solid;
-  transition: var(--transition-fast);
+
+}
+
+
+@keyframes bounce {
+	0%, 100% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+  20%, 80%{
+    -webkit-transform: translateY(-5px);
+		-ms-transform:     translateY(-5px);
+		transform:         translateY(-5px)
+  }
+
+	40%,60% {
+		-webkit-transform: translateY(-10px);
+		-ms-transform:     translateY(-10px);
+		transform:         translateY(-10px)
+	}
+  50%{
+    -webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+  }
+
+
 }

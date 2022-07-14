@@ -5,16 +5,19 @@
   align-items: center;
   padding: 1rem 1rem 1rem 1rem;
   flex: 1 1 0px;
-  height: 22vh;
+  height: 20vh;
+  width: 15vh;
 
-  background-color: rgba(42, 104, 170, 0.557);
-  border: rgba(255, 255, 255, 0) 0.1px solid;
-  border-radius: 4%;
+  background: rgb(42,104,170);
+  background: linear-gradient(0deg, rgba(42,104,170,1) 0%, rgba(19,19,106,1) 100%);
+  border: rgba(255, 255, 255, 0.404) 0.1px solid;
+  border-radius: 2rem;
   overflow: hidden;
 }
 
 .about_container {
   display: flex;
+
   gap: 3rem;
 }
 
@@ -33,15 +36,15 @@
 }
 
 .cards_container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
   padding: 2rem;
   margin: 0 1rem 0 1rem;
 
-  background: rgba(35, 1, 54, 0.384);
-  border-radius: 5px;
+  background: rgba(141, 120, 153, 0.384);
+  border-radius: 1.3rem;
 }
 
 h4 {
