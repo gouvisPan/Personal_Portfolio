@@ -3,8 +3,11 @@ import { useState } from "react";
 import TypeWriter from "typewriter-effect";
 
 const ContactCard = (props) => {
+
+  const cardCss = props.expand ? "contact-card-exp" : "contact-card";
+
   return (
-    <a href={props.link} target="_blank" className="contact-card ">
+    <a href={props.link} target="_blank" className={cardCss}>
       {props.children}
     </a>
   );

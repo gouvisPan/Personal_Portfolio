@@ -14,19 +14,19 @@ const Contact = () => {
       <h4>Find Me</h4>
       <div className="contact-container">
         <div className="find-me">
-            <ContactCard
+            <ContactCard expand={false}
               link="https://linkedin.com"
               desc="Send me a direct message in facebook messenger"
             >
               <FiLinkedin />
             </ContactCard>
-            <ContactCard
+            <ContactCard expand={false}
               link="https://github.com"
               desc="Send me a direct message in facebook messenger"
             >
               <FiGithub />
             </ContactCard>
-            <ContactCard
+            <ContactCard expand={false}
               link="https://facebook.com"
               desc="Send me a direct message in facebook messenger"
             >
@@ -36,19 +36,19 @@ const Contact = () => {
         </div>
 
         <div className="contact-me">
-          <ContactCard
+          <ContactCard expand={false}
             link="https://linkedin.com"
             desc="Send me a direct message in facebook messenger"
           >
             <FaFacebookMessenger />
           </ContactCard>
-          <ContactCard
+          <ContactCard expand={false}
             link="https://github.com"
             desc="Send me a direct message in facebook messenger"
           >
             <IoLogoWhatsapp />
           </ContactCard>
-          <ContactCard
+          <ContactCard expand={true}
             link="https://facebook.com"
             desc="Send me a direct message in facebook messenger"
           >
