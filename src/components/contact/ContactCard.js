@@ -1,13 +1,10 @@
 import React from "react";
-import { useState } from "react";
-import TypeWriter from "typewriter-effect";
 
 const ContactCard = (props) => {
-
-  const cardCss = props.expand ? "contact-card-exp" : "contact-card";
+  const css = props.hide ? "hidden-card" : "contact-card";
 
   return (
-    <a href={props.link} target="_blank" className={cardCss}>
+    <a href={props.link} target="_blank" className={css}>
       {props.children}
     </a>
   );

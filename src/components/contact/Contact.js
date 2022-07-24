@@ -7,53 +7,60 @@ import { FaFacebookMessenger } from "react-icons/fa";
 import { MdMarkEmailUnread } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 import ContactCard from "./ContactCard";
+import { useState } from "react";
+import ExpandCard from "./ExpandCard";
 
 const Contact = () => {
+  const [mailIsExpanded, setMailIsExpaned] = useState(false);
+
+  const mailClickHandler = () => {
+    setMailIsExpaned(!mailIsExpanded);
+  };
+
   return (
     <section id="contact">
       <h4>Find Me</h4>
       <div className="contact-container">
         <div className="find-me">
-            <ContactCard expand={false}
-              link="https://linkedin.com"
-              desc="Send me a direct message in facebook messenger"
-            >
-              <FiLinkedin />
-            </ContactCard>
-            <ContactCard expand={false}
-              link="https://github.com"
-              desc="Send me a direct message in facebook messenger"
-            >
-              <FiGithub />
-            </ContactCard>
-            <ContactCard expand={false}
-              link="https://facebook.com"
-              desc="Send me a direct message in facebook messenger"
-            >
-              <FiFacebook />
-            </ContactCard>
-          
-        </div>
-
-        <div className="contact-me">
-          <ContactCard expand={false}
+          <ContactCard
             link="https://linkedin.com"
             desc="Send me a direct message in facebook messenger"
           >
-            <FaFacebookMessenger />
+            <FiLinkedin />
           </ContactCard>
-          <ContactCard expand={false}
+          <ContactCard
             link="https://github.com"
             desc="Send me a direct message in facebook messenger"
           >
-            <IoLogoWhatsapp />
+            <FiGithub />
           </ContactCard>
-          <ContactCard expand={true}
+          <ContactCard
             link="https://facebook.com"
             desc="Send me a direct message in facebook messenger"
           >
-            <MdMarkEmailUnread />
+            <FiFacebook />
           </ContactCard>
+        </div>
+
+        <div className="contact-me">
+          <ContactCard
+            link="https://linkedin.com"
+            desc="Send me a direct message in facebook messenger"
+            hide={mailIsExpanded}
+          >
+            <FaFacebookMessenger />
+          </ContactCard>
+
+          <ContactCard
+            link="https://github.com"
+            desc="Send me a direct message in facebook messenger"
+            hide={mailIsExpanded}
+          >
+            <IoLogoWhatsapp />
+          </ContactCard>
+          <ExpandCard link="https://facebook.com" onClick={mailClickHandler}>
+            <MdMarkEmailUnread />
+          </ExpandCard>
         </div>
       </div>
     </section>

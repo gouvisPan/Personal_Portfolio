@@ -10,6 +10,11 @@
   flex-direction: column;
   gap: 3rem;
 }
+.hidden-card {
+  height: 0;
+  width: 0;
+  transition: var(--transition);
+}
 
 .contact-card {
   height: 18vh;
@@ -35,7 +40,7 @@
   color: white;
 }
 
-.contact-card-exp{
+.expandable-contact-card {
   height: 18vh;
   width: 18vh;
   background: var(--color-bg-c);
@@ -48,8 +53,8 @@
   border: 0.5px var(--color-white) solid;
   transition: var(--transition);
 
-  -webkit-animation-duration: .5s;
-  animation-duration: .5s;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-timing-function: linear;
@@ -59,7 +64,8 @@
   color: white;
 }
 
-.contact-container a {
+.contact-container a,
+div {
   font-size: 3rem;
   margin-top: 0.5rem;
 }
@@ -67,13 +73,11 @@
 .contact-container {
   display: flex;
   align-items: center;
-  gap:8rem;
+  gap: 8rem;
   justify-content: center;
 
   margin-top: -2rem;
 }
-
-
 
 .desc-container {
   display: none;
@@ -88,70 +92,126 @@
   background: var(--color-bg-c-t);
 
   border: px var(--color-primary) solid;
-
 }
-
-.contact-card-exp:hover {
+/* 
+.expandable-contact-card:hover {
   cursor: pointer;
   animation-name: rotating;
   -moz-animation-name: rotating;
   background: var(--color-bg-c-t);
   border: px var(--color-primary) solid;
+} */
+
+.expanded-card {
+  margin-top: -20vh;
+  height: 62vh;
+  width: 60vh;
+  background: var(--color-bg-c);
+  border-radius: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px var(--color-white) solid;
+  transition: var(--transition);
+
+  animation-name: slide;
+  -moz-animation-name: slide;
+}
+
+.expanded-card .icon {
+  display: none;
+}
+.expandable-contact-card .form {
+  display: none;
 }
 
 @keyframes bounce {
-	0%, 100% {
-		-webkit-transform: translateY(0);
-		-ms-transform:     translateY(0);
-		transform:         translateY(0)
-	}
-  20%, 80%{
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  20%,
+  80% {
     -webkit-transform: translateY(-5px);
-		-ms-transform:     translateY(-5px);
-		transform:         translateY(-5px)
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
   }
 
-	40%,60% {
-		-webkit-transform: translateY(-10px);
-		-ms-transform:     translateY(-10px);
-		transform:         translateY(-10px)
-	}
-  50%{
+  40%,
+  60% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  50% {
     -webkit-transform: translateY(-15px);
-		-ms-transform:     translateY(-15px);
-		transform:         translateY(-15px)
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
   }
-
 }
 
 @-webkit-keyframes rotating /* Safari and Chrome */ {
-  from {
+  0%,
+  50%,
+  100% {
     -webkit-transform: rotate(0deg);
     -o-transform: rotate(0deg);
     transform: rotate(0deg);
   }
-  to {
-    -webkit-transform: rotate(60deg);
-    -o-transform: rotate(60deg);
-    transform: rotate(60deg);
+  25% {
+    -webkit-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
   }
 }
 @keyframes rotating {
-  from {
+  0%,
+  50%,
+  100% {
     -ms-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     -o-transform: rotate(0deg);
-    transform: rotate(0deg);
   }
-  to {
-    -ms-transform: rotate(160deg);
-    -moz-transform: rotate(160deg);
-    -webkit-transform: rotate(160deg);
-    -o-transform: rotate(160deg);
-    transform: rotate(160deg);
+  25% {
+    -ms-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+  75% {
+    -ms-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    transform: rotate(-10deg);
   }
 }
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
 .rotating {
   -webkit-animation: rotating 2s linear infinite;
   -moz-animation: rotating 2s linear infinite;
