@@ -4,7 +4,7 @@ import CvSec from "./CvSec";
 import ME from "./../../assets/me.png";
 import HeaderContacts from "./HeaderContacts";
 import Typewriter from "react-ts-typewriter";
-import Sphere from "./Sphere";
+import AnimationCanvas from "../UI/AnimationCanvas";
 
 const Header = () => {
   return (
@@ -27,7 +27,9 @@ const Header = () => {
       {/* <div className="me">
         <img src={ME} alt="me working" />
       </div> */}
-      <Sphere />
+      <div className="spheres">
+        <AnimationCanvas scale={1.5} />
+      </div>
     </header>
   );
 };

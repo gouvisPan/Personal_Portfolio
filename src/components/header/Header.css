@@ -1,6 +1,7 @@
 header {
   height: 100vh;
-  padding-top: 5rem;
+  margin-top: 5rem;
+  padding-top: 2rem;
   overflow: hidden;
 }
 
@@ -22,7 +23,7 @@ header {
 }
 .header_contacts {
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
   align-items: center;
 }
 
@@ -38,7 +39,7 @@ header {
   display: flex;
   gap: 0.6rem;
   font-size: 2rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .tagcloud {
@@ -56,6 +57,18 @@ h5 {
   margin-bottom: 0.2rem;
 }
 
+.spheres {
+  position: absolute;
+  right: 6rem;
+  margin-top: -16rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.top-sphere {
+  padding-right: 5rem;
+}
 /* ==== SMARTPHONES ==== */
 
 @media screen and (max-width: 600px) {

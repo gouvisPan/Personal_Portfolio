@@ -9,13 +9,17 @@
   height: 20vh;
   width: 15vh;
 
-  background: rgb(32,61,91);
-  background: linear-gradient(0deg, rgba(14, 25, 37, 0.872) 0%, rgb(84, 84, 182) 100%);border: rgba(255, 255, 255, 0.877) 1px solid;
+  background: rgb(32, 61, 91);
+  background: linear-gradient(0deg, rgba(14, 25, 37, 0.872) 0%, #2a68aa 100%);
+  border: rgba(255, 255, 255, 0.877) 1px solid;
   border-radius: 2rem;
   overflow: hidden;
   transition: var(--transition);
 }
 
+#about {
+  margin-top: 10rem;
+}
 .about_container {
   display: flex;
 
@@ -24,7 +28,7 @@
 
 .about_card:hover {
   background: rgba(255, 255, 255, 0.897);
-  color:rgba(14, 25, 37, 0.872);
+  color: rgba(14, 25, 37, 0.872);
   border: white 0.1px solid;
   transition: var(--transition-slow);
 }
