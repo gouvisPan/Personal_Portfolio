@@ -19,14 +19,13 @@
 .contact-card {
   height: 18vh;
   width: 18vh;
-  background: var(--color-bg-c);
+  background: var(--color-gradient);
   border-radius: 2rem;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 0.5px var(--color-white) solid;
   transition: var(--transition);
 
   -webkit-animation-duration: 1s;
@@ -43,14 +42,13 @@
 .expandable-contact-card {
   height: 18vh;
   width: 18vh;
-  background: var(--color-bg-c);
+  background: var(--color-gradient);
   border-radius: 2rem;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 0.5px var(--color-white) solid;
   transition: var(--transition);
 
   -webkit-animation-duration: 0.4s;
@@ -89,7 +87,7 @@ div {
   animation-name: bounce;
   -moz-animation-name: bounce;
 
-  background: var(--color-bg-c-t);
+  background: var(--color-gradient-t);
 
   border: px var(--color-primary) solid;
 }
@@ -103,19 +101,20 @@ div {
 } */
 
 .expanded-card {
-  margin-top: -20vh;
-  height: 62vh;
+  margin-top: -24vh;
+  height: 65vh;
   width: 60vh;
-  background: var(--color-bg-c);
+  background: var(--color-gradient-c);
   border-radius: 2rem;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 0.5px var(--color-white) solid;
+  border: 0px var(--color-white) solid;
   transition: var(--transition);
 
+  overflow-y: scroll;
   animation-name: slide;
   -moz-animation-name: slide;
 }

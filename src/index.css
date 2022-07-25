@@ -35,7 +35,11 @@ code {
   --color-primary-c: #13136a;
   --color-white: #fff;
   --color-light: rgba(240, 240, 240, 0.8);
-
+  
+  --color-gradient: linear-gradient(90deg, rgba(42,104,170,1) 0%, rgba(39,39,158,0.9332107843137255) 45%, rgba(19,19,106,0.9304096638655462) 99%);
+  --color-gradient-t: linear-gradient(90deg, rgba(42,104,170,.7) 0%, rgba(39,39,158,0.7) 45%, rgba(19,19,106,0.7) 99%);
+  --color-gradient-c:linear-gradient(90deg, rgba(19,19,106,1) 0%, rgba(39,39,158,0.9332107843137255) 45%, rgba(33,33,142,1) 62%, rgba(42,104,170,1) 99%);
+ 
   --container-width-large: 75%;
   --container-width-mid: 86%;
   --container-width-small: 90%;

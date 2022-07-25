@@ -23,20 +23,20 @@ const Contact = () => {
       <div className="contact-container">
         <div className="find-me">
           <ContactCard
-            link="https://linkedin.com"
-            desc="Send me a direct message in facebook messenger"
+            link="https://www.linkedin.com/in/panagiotis-gouvis-648969229/"
+            desc="Check me out in LinkedIn"
           >
             <FiLinkedin />
           </ContactCard>
           <ContactCard
-            link="https://github.com"
-            desc="Send me a direct message in facebook messenger"
+            link="https://github.com/gouvisPan"
+            desc="Check me out in Github"
           >
             <FiGithub />
           </ContactCard>
           <ContactCard
-            link="https://facebook.com"
-            desc="Send me a direct message in facebook messenger"
+            link="https://www.facebook.com/panagiotis.gouvis"
+            desc="Check me out in Facebook"
           >
             <FiFacebook />
           </ContactCard>
@@ -44,7 +44,7 @@ const Contact = () => {
 
         <div className="contact-me">
           <ContactCard
-            link="https://linkedin.com"
+            link="https://m.me/panagiotis.gouvis"
             desc="Send me a direct message in facebook messenger"
             hide={mailIsExpanded}
           >
@@ -52,8 +52,8 @@ const Contact = () => {
           </ContactCard>
 
           <ContactCard
-            link="https://github.com"
-            desc="Send me a direct message in facebook messenger"
+            link="https://api.whatsapp.com/send?phone=306974133780"
+            desc="Send me a direct message in Whatsapp"
             hide={mailIsExpanded}
           >
             <IoLogoWhatsapp />

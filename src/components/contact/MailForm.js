@@ -34,14 +34,18 @@ const MailForm = (props) => {
       }}
     >
       {(formik) => (
-        <div className="form-content">
-          <h4>Send me a direct mail...</h4>
-          <Form>
+        
+        <div className="expanded-content">
+          <h4>Send me a direct mail</h4>
+          <Form className="form-content">
             <TextField label="name" name="name" type="text" />
             <TextField label="email" name="email" type="text" />
-            <TextField label="message" name="message" type="text" />
-            <button type="submit">Submit</button>
-            <button onClick={props.onClose}>X</button>
+            <TextField label="message" name="message" type="text" message={true}/>
+
+            <div className="buttons">
+              <button type="Send" className="submit-btn">Submit</button>
+              <button onClick={props.onClose} className="closing-btn">Nevermind</button>  
+            </div>
           </Form>
         </div>
       )}

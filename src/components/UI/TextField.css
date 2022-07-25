@@ -1,0 +1,37 @@
+input{
+    height: 100%;
+    padding: .2rem;
+    background-color: rgb(199, 196, 196);
+    border-radius: .5rem;
+}
+
+.error{
+    color: #cc0033;
+    font-size: .6rem;
+    padding: -2rem;
+
+}
+
+label{
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+.text-field-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.field{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+.message{
+    border-radius: .5rem;
+    height: 6rem;
+    align-self: flex-end;
+    vertical-align: top;
+}

@@ -17,13 +17,13 @@ const About = () => {
 
         <div className="info">
           <div className="cards_container">
-            <article className="about_card">
+            <articlele className="about_card">
               <FaUniversity />
               <h5>Education</h5>
               <small>
                 <strong>Excellence </strong> at Applied Informatics UoM
               </small>
-            </article>
+            </articlele>
             <article className="about_card">
               <AiFillStar />
               <h5>Skillset</h5>

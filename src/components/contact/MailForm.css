@@ -1,0 +1,52 @@
+.expanded-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: -6rem;
+    overflow-y:scroll;
+    gap: 1rem;
+}
+
+h4{
+    font-size: 1rem;
+    margin-bottom: .3rem;
+}
+
+.form-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap:.5rem;
+  
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    align-items: flex-end;
+}
+
+.buttons button{
+    color: white;
+    width: 6rem;
+    border-radius: .5rem;
+    padding:  .6rem;
+    border: solid 0px rgb(255, 255, 255);
+    background-color: rgb(22, 22, 22);
+}
+
+.buttons button:hover{
+    font-weight: 600;
+    cursor: pointer;
+    background-color: var(--color-primary); 
+    background-color: rgb(241, 238, 238);
+    color: rgb(22, 22, 22);
+}
+
+.closing-btn{
+   background-color: rgb(88, 70, 70); 
+}
+
+.submit-btn{
+    background-color: var(--color-primary-c); 
+}
