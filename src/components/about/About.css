@@ -11,7 +11,7 @@
 
   background: rgb(32, 61, 91);
   background: linear-gradient(0deg, rgba(14, 25, 37, 0.872) 0%, #2a68aa 100%);
-  border: rgba(255, 255, 255, 0.877) 1px solid;
+ 
   border-radius: 2rem;
   overflow: hidden;
   transition: var(--transition);

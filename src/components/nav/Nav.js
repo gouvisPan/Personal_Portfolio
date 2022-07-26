@@ -1,5 +1,6 @@
 import React from "react";
 import "./Nav.css";
+import useScroll from '../../hooks/useScroll'
 import { RiHome3Fill } from "react-icons/ri";
 import { MdContactPage } from "react-icons/md";
 import { FaCode } from "react-icons/fa";
@@ -9,22 +10,29 @@ import { useState } from "react";
 
 const Nav = () => {
   const [activeIcon, setActiveIcon] = useState("#");
+  const scrollPosition = useScroll();
+
+  const navCss = (scrollPosition < 100) ? "fixed-nav" : "floating-nav"
 
   return (
-    <nav>
+    <nav className={navCss}>
+  
       <a
         href="#"
         onClick={() => setActiveIcon("#")}
         className={activeIcon === "#" ? "active" : ""}
-      >
+      > 
         <RiHome3Fill />
+        <p>Home</p>
       </a>
+
       <a
         href="#about"
         onClick={() => setActiveIcon("#about")}
         className={activeIcon === "#about" ? "active" : ""}
       >
         <FaUser />
+        <p>About</p>
       </a>
       <a
         href="#projects"
@@ -32,6 +40,8 @@ const Nav = () => {
         className={activeIcon === "#projects" ? "active" : ""}
       >
         <FaCode />
+        <p>Projects</p>
+      
       </a>
       <a
         href="#contact"
@@ -39,7 +49,9 @@ const Nav = () => {
         className={activeIcon === "#contact" ? "active" : ""}
       >
         <MdContactPage />
+        <p>Contact</p>
       </a>
+    
     </nav>
   );
 };

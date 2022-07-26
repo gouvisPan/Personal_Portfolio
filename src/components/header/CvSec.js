@@ -8,7 +8,7 @@ const CvSec = () => {
         My CV
       </a>
       <a href="#contact" className="btn btn-main">
-        Mock me
+        Find Me
       </a>
     </div>
   );

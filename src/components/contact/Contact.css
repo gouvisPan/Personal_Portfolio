@@ -51,14 +51,7 @@
   align-items: center;
   transition: var(--transition);
 
-  -webkit-animation-duration: 0.4s;
-  animation-duration: 0.4s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
+  
   color: white;
 }
 
@@ -113,10 +106,7 @@ div {
   align-items: center;
   border: 0px var(--color-white) solid;
   transition: var(--transition);
-
   overflow-y: scroll;
-  animation-name: slide;
-  -moz-animation-name: slide;
 }
 
 .expanded-card .icon {
@@ -210,6 +200,7 @@ div {
     transform: translateY(-15px);
   }
 }
+
 
 .rotating {
   -webkit-animation: rotating 2s linear infinite;

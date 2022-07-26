@@ -4,3 +4,11 @@
   width: 50vh;
   padding-bottom: 2rem;
 }
+
+.canvas-lava {
+  position: absoloute;
+  z-index: 0;
+  height: 40vh;
+  width: 50vh;
+  padding-bottom: 2rem;
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
-
+import { MeshDistortMaterial } from '@react-three/drei';
 const AnimatedSphere = (props) => {
   const mesh = useRef();
   useFrame(() => (mesh.current.rotation.y += 0.01));
@@ -10,7 +10,7 @@ const AnimatedSphere = (props) => {
   return (
     <mesh ref={mesh} scale={props.scale} rotation={[90, 40, 20]}>
       <icosahedronBufferGeometry attach="geometry" detail={0} />
-      <meshStandardMaterial attach="material" color="#2a68aa" metalness={0} />
+      <MeshDistortMaterial attach="material" color="#2a68aa" metalness={0} distort={1.2} />
     </mesh>
   );
 };

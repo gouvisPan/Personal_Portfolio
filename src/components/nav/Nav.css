@@ -1,6 +1,49 @@
-nav {
-  background: rgba(101, 101, 101, 0.516);
-  width: max-content;
+.fixed-nav{
+  width: 100%;
+  padding: 1rem 1rem 0.2rem 1rem;
+  position: fixed;
+  bottom: calc(100% - 3.5rem);
+  left: 50%;
+  z-index: 2;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, rgba(186,186,186,0.1) 0%, rgba(231,229,229,0.9556197478991597) 100%);
+  padding-left: 65%;
+  gap: 3rem;
+  display: flex;
+
+  -webkit-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -ms-transition: all .3s ease-in;
+  transition: all .3s ease-in;
+
+}
+
+
+.p{
+  margin-top: -5px
+}
+
+
+.fixed-nav a {
+  font-size: 1.1rem;
+  background-color: transparent;
+  border-radius: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fixed-nav a:hover{
+  color: black;
+}
+.fixed-nav a.active {
+  color: black;
+}
+
+.floating-nav {
+  background: rgba(136, 136, 136, 0.516);
+  width: 18%;
   padding: 0.5rem 1.5rem;
 
   position: fixed;
@@ -10,18 +53,42 @@ nav {
   z-index: 2;
 
   display: flex;
+  justify-content: space-around;
   gap: 1.5rem;
 
   border-radius: 2rem;
+
+  
+  -webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  -ms-transition: all .5s ease-in;
+  transition: all .5s ease-in;
 }
 
-nav a {
+.floating-nav a {
   font-size: 1.1rem;
   padding: 0.2rem;
   background-color: transparent;
   border-radius: 60%;
 }
 
-nav a.active {
+.floating-nav a.active {
   color: var(--color-white);
+}
+
+.floating-nav p{
+  display: none;
+}
+
+
+@keyframes slidein-low  {
+  from {
+     top:0;
+  }
+  
+  to {
+     top:90%;
+  }
+
 }
