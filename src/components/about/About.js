@@ -9,18 +9,20 @@ import useScroll from "../../hooks/useScroll";
 
 const About = () => {
   const scrollPosition = useScroll();
-  
-  let dynamicScale = .5 - (scrollPosition)/180 ; 
 
-  if(scrollPosition>500 ){
+  let dynamicScale = 0;
+
+  if (scrollPosition > 300) {
+    dynamicScale = 1.5 - scrollPosition / 180;
+  }
+
+  if (scrollPosition > 675) {
     dynamicScale = 2.25;
   }
-  
-  if(scrollPosition>700){
-    dynamicScale = 6  - (scrollPosition)/180 ;
-    
+
+  if (scrollPosition > 900) {
+    dynamicScale = 7.2 - scrollPosition / 180;
   }
-  console.log(dynamicScale) ;
 
   return (
     <section id="about">
@@ -31,13 +33,13 @@ const About = () => {
           {/* <img src={ME} className="me_img" /> */}
         </div>
 
-        
         <div className="info">
-        <div className="info_descr_left">
-        <AnimationCanvas scale={dynamicScale} />
+          <div className="info_descr_left">
+            <AnimationCanvas scale={dynamicScale} />
             <p>
-              Driven by creativity, I've dedicated the past two years in the proccess of learning 
-              how to build responsive applications for both Android and Web. 
+              Driven by creativity, I've dedicated the past two years in the
+              proccess of learning how to build responsive applications for both
+              Android and Web.
             </p>
           </div>
           <div className="cards_container_right">

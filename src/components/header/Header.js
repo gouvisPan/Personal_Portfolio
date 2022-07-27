@@ -9,7 +9,12 @@ import useScroll from "../../hooks/useScroll";
 
 const Header = () => {
   const scrollPosition = useScroll();
-  const dynamicScale = 1.5 - (scrollPosition)/180 ; 
+  let dynamicScale = 1.5 - scrollPosition / 180;
+  console.log(scrollPosition);
+
+  if (scrollPosition > 265) {
+    dynamicScale = 0;
+  }
 
   return (
     <header id="home">

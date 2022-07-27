@@ -19,13 +19,13 @@
   transition: var(--transition);
 }
 
-.portfolio-container{
+.portfolio-container {
   display: flex;
   justify-content: space-around;
 }
 
 .react_projects_container {
-  flex: .6 0 0 ;
+  flex: 0.6 0 0;
   display: flex;
   justify-content: space-between;
   gap: 2rem;
@@ -33,28 +33,29 @@
   padding-top: 2rem;
 }
 
-.android_projects_container{
+.android_projects_container {
   display: none;
 }
-.content-buttons{
-  position:absolute;
-  right:0;
-  margin-top: 10rem;
-  transform:rotate(90deg);
+.content-buttons {
+  position: absolute;
+  right: 0;
   display: flex;
+  flex-direction: column;
   letter-spacing: 10px;
-  
 }
-button{
+#projects {
+  margin-top: 12rem;
+}
+button {
   color: var(--color-primary);
   background-color: transparent;
   border: 1px white solid;
   width: 10rem;
   padding: 1rem;
-  border-radius: .5rem .5rem 0 0 ;
+  border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.button-active{
+.button-active {
   background-color: var(--color-primary);
   color: white;
   border: 0px;

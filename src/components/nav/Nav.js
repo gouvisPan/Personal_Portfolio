@@ -1,6 +1,6 @@
 import React from "react";
 import "./Nav.css";
-import useScroll from '../../hooks/useScroll'
+import useScroll from "../../hooks/useScroll";
 import { RiHome3Fill } from "react-icons/ri";
 import { MdContactPage } from "react-icons/md";
 import { FaCode } from "react-icons/fa";
@@ -12,16 +12,15 @@ const Nav = () => {
   const [activeIcon, setActiveIcon] = useState("#");
   const scrollPosition = useScroll();
 
-  const navCss = (scrollPosition < 100) ? "fixed-nav" : "floating-nav"
+  const navCss = scrollPosition < 130 ? "fixed-nav" : "floating-nav";
 
   return (
     <nav className={navCss}>
-     
       <a
         href="#"
         onClick={() => setActiveIcon("#")}
         className={activeIcon === "#" ? "active" : ""}
-      > 
+      >
         <RiHome3Fill />
         <p>Home</p>
       </a>
@@ -41,7 +40,6 @@ const Nav = () => {
       >
         <FaCode />
         <p>Projects</p>
-      
       </a>
       <a
         href="#contact"
@@ -51,7 +49,6 @@ const Nav = () => {
         <MdContactPage />
         <p>Contact</p>
       </a>
-    
     </nav>
   );
 };
