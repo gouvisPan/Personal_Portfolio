@@ -10,7 +10,7 @@ const AnimatedSphere = (props) => {
   return (
     <mesh ref={mesh} scale={props.scale} rotation={[90, 40, 20]}>
       <icosahedronBufferGeometry attach="geometry" detail={0} />
-      <MeshDistortMaterial attach="material" color="#2a68aa" metalness={0} distort={1.2} />
+      <MeshDistortMaterial attach="material" color="#2a68aa" metalness={0} distort={props.dist} />
     </mesh>
   );
 };

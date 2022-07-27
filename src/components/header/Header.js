@@ -5,8 +5,12 @@ import ME from "./../../assets/me.png";
 import HeaderContacts from "./HeaderContacts";
 import Typewriter from "react-ts-typewriter";
 import AnimationCanvas from "../UI/AnimationCanvas";
+import useScroll from "../../hooks/useScroll";
 
 const Header = () => {
+  const scrollPosition = useScroll();
+  const dynamicScale = 1.5 - (scrollPosition)/180 ; 
+
   return (
     <header id="home">
       <div className="container header_container">
@@ -28,7 +32,7 @@ const Header = () => {
         <img src={ME} alt="me working" />
       </div> */}
       <div className="spheres">
-        <AnimationCanvas scale={1.5} />
+        <AnimationCanvas scale={dynamicScale} />
       </div>
     </header>
   );

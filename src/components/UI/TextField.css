@@ -6,14 +6,16 @@ input{
 }
 
 .error{
+    position: absolute;
+    margin-top: 2rem;
     color: #cc0033;
     font-size: .6rem;
     padding: -2rem;
-
 }
 
 label{
-    font-size: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
     margin-right: 1rem;
 }
 .text-field-content{
@@ -25,6 +27,7 @@ label{
 .field{
     display: flex;
     flex-direction: row;
+    gap:1rem;
     justify-content: space-between;
    
 }

@@ -1,8 +1,6 @@
 import React from "react";
 import MailForm from "./MailForm";
 import { useState } from "react";
-import { motion } from "framer-motion";
-import { AnimateSharedLayout } from "framer-motion";
 import Delay from "../helpers/Delay";
 
 const ExpandCard = (props) => {

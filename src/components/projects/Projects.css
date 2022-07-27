@@ -1,4 +1,4 @@
-.project_card {
+.project-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,22 +6,56 @@
   gap: 1rem;
 }
 
-.project_card img {
+.project-card img {
   border-radius: 1rem;
   width: 20vh;
-  height: 40vh;
+  height: 45vh;
   transition: var(--transition);
 }
 
-.project_card img:hover {
-  width: 30vh;
-  height: 60vh;
+.project-card img:hover {
+  width: 33vh;
+  height: 72vh;
   transition: var(--transition);
+}
+
+.portfolio-container{
+  display: flex;
+  justify-content: space-around;
 }
 
 .react_projects_container {
+  flex: .6 0 0 ;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  gap: 2rem;
 
   padding-top: 2rem;
+}
+
+.android_projects_container{
+  display: none;
+}
+.content-buttons{
+  position:absolute;
+  right:0;
+  margin-top: 10rem;
+  transform:rotate(90deg);
+  display: flex;
+  letter-spacing: 10px;
+  
+}
+button{
+  color: var(--color-primary);
+  background-color: transparent;
+  border: 1px white solid;
+  width: 10rem;
+  padding: 1rem;
+  border-radius: .5rem .5rem 0 0 ;
+}
+
+.button-active{
+  background-color: var(--color-primary);
+  color: white;
+  border: 0px;
 }

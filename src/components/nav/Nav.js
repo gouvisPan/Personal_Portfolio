@@ -16,7 +16,7 @@ const Nav = () => {
 
   return (
     <nav className={navCss}>
-  
+     
       <a
         href="#"
         onClick={() => setActiveIcon("#")}

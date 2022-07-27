@@ -1,6 +1,6 @@
 header {
   height: 100vh;
-  margin-top: 5rem;
+  margin-top: 7rem;
   padding-top: 2rem;
   overflow: hidden;
 }
@@ -59,16 +59,11 @@ h5 {
 
 .spheres {
   position: absolute;
-  right: 6rem;
+  right: 10%;
   margin-top: -16rem;
-
-  display: flex;
-  flex-direction: column;
 }
 
-.top-sphere {
-  padding-right: 5rem;
-}
+
 /* ==== SMARTPHONES ==== */
 
 @media screen and (max-width: 600px) {

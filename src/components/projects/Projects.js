@@ -3,28 +3,25 @@ import "./Projects.css";
 import WeatherApp from "./../../assets/FullApp.png";
 import Dummy from "./../../assets/dummy.png";
 import Dummy2 from "./../../assets/dummy2.png";
+import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
     <section id="projects">
       <h4>A glance into my portfolio</h4>
-      <div className="protfolio_container">
+      <div className="portfolio-container">
+      
         <div className="react_projects_container">
-          <div className="project_card">
-            <img src={WeatherApp} />
-            <h5>Weather App</h5>
-          </div>
-          <div className="project_card">
-            <img src={Dummy} />
-            <h5>Dummy App</h5>
-          </div>
-          <div className="project_card">
-            <img src={Dummy2} />
-            <h5>Dummy App 2</h5>
-          </div>
+          <ProjectCard label="Weather App" img={WeatherApp}/>
+          <ProjectCard label="Dummy App" img={Dummy}/>
+          <ProjectCard label="Dummy App 2" img={Dummy2}/>
         </div>
 
         <div className="android_projects_container"></div>
+        <div className="content-buttons">
+            <button className="button-active">Web</button>
+            <button>ANDROID</button>
+        </div>
       </div>
     </section>
   );

@@ -1,15 +1,15 @@
 import React from 'react'
 import { Sphere,MeshDistortMaterial } from '@react-three/drei';
 
-const AnimatedLava = () => {
+const AnimatedLava = (props) => {
   return (
     <Sphere visible args={[1, 100, 200]} scale={2}>
     <MeshDistortMaterial
       color="#2a68aa"
       attach="material"
-      distort={.8}
-      speed={1.5}
-      roughness={0}
+      distort={props.dist}
+      speed={3}
+      metalness={0}
     />
   </Sphere>
   );

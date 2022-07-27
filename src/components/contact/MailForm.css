@@ -1,8 +1,8 @@
 .expanded-content{
     display: flex;
     flex-direction: column;
-    margin-top: -6rem;
-    overflow-y:scroll;
+    margin-top: -2rem;
+    overflow-x:scroll;
     gap: 1rem;
 }
 
@@ -15,7 +15,7 @@ h4{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    gap:.5rem;
+    gap: 2rem;
   
 }
 
@@ -27,21 +27,23 @@ h4{
 }
 
 .buttons button{
-    color: white;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
     width: 6rem;
     border-radius: .5rem;
     padding:  .6rem;
-    border: solid 0px rgb(255, 255, 255);
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(255, 255, 255);
 }
 
 .buttons button:hover{
-    font-weight: 600;
     cursor: pointer;
-    background-color: var(--color-primary); 
-    background-color: rgb(241, 238, 238);
+    background: rgb(177, 177, 177);
     color: rgb(22, 22, 22);
+
+    transition: var();
 }
+.buttons button:active{background-color:rgb(68, 68, 68);}
+
 
 .closing-btn{
    background-color: rgb(88, 70, 70); 
@@ -50,3 +52,10 @@ h4{
 .submit-btn{
     background-color: var(--color-primary-c); 
 }
+
+.text-fields{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+

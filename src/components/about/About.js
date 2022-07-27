@@ -4,19 +4,43 @@ import { FaFolderOpen } from "react-icons/fa";
 import { AiFillStar } from "react-icons/ai";
 import "./About.css";
 import ME from "./../../assets/man.jpg";
+import AnimationCanvas from "../UI/AnimationCanvas";
+import useScroll from "../../hooks/useScroll";
 
 const About = () => {
+  const scrollPosition = useScroll();
+  
+  let dynamicScale = .5 - (scrollPosition)/180 ; 
+
+  if(scrollPosition>500 ){
+    dynamicScale = 2.25;
+  }
+  
+  if(scrollPosition>700){
+    dynamicScale = 6  - (scrollPosition)/180 ;
+    
+  }
+  console.log(dynamicScale) ;
+
   return (
     <section id="about">
       <h4>Some info about me</h4>
 
       <div className="container about_container">
         <div className="me_con">
-          <img src={ME} className="me_img" />
+          {/* <img src={ME} className="me_img" /> */}
         </div>
 
+        
         <div className="info">
-          <div className="cards_container">
+        <div className="info_descr_left">
+        <AnimationCanvas scale={dynamicScale} />
+            <p>
+              Driven by creativity, I've dedicated the past two years in the proccess of learning 
+              how to build responsive applications for both Android and Web. 
+            </p>
+          </div>
+          <div className="cards_container_right">
             <articlele className="about_card">
               <FaUniversity />
               <h5>Education</h5>
@@ -37,12 +61,6 @@ const About = () => {
                 <strong> React.js</strong> projects
               </small>
             </article>
-          </div>
-          <div className="info_descr">
-            <p>
-              Driven by creativity, I've dedicated the past two years in the proccess of learning 
-              how to build responsive applications for both Android and Web. 
-            </p>
           </div>
         </div>
       </div>

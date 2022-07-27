@@ -12,3 +12,22 @@
   width: 50vh;
   padding-bottom: 2rem;
 }
+
+
+.background-shapes{  
+  position: fixed;
+  left: 20%;
+  z-index: -4;
+
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+ 
+.hidden{
+  left:-30%;
+ 
+}
+

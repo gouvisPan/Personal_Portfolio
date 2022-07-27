@@ -51,10 +51,23 @@
   align-items: center;
   transition: var(--transition);
 
-  
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
   color: white;
 }
 
+.expandable-contact-card:hover{
+  cursor: pointer;
+  animation-name: bounce;
+  -moz-animation-name: bounce;
+  
+}
 .contact-container a,
 div {
   font-size: 3rem;
@@ -79,7 +92,7 @@ div {
   cursor: pointer;
   animation-name: bounce;
   -moz-animation-name: bounce;
-
+  
   background: var(--color-gradient-t);
 
   border: px var(--color-primary) solid;
@@ -95,9 +108,9 @@ div {
 
 .expanded-card {
   margin-top: -24vh;
-  height: 65vh;
+  height: 60vh;
   width: 60vh;
-  background: var(--color-gradient-c);
+  background: var(--color-gradient);
   border-radius: 2rem;
 
   display: flex;
