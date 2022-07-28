@@ -44,7 +44,7 @@ const Nav = () => {
       <a
         href="#contact"
         onClick={() => setActiveIcon("#contact")}
-        className={activeIcon === "#contact" ? "active" : ""}
+        className={activeIcon === "#contact" ? "active last-child" : "last-child"}
       >
         <MdContactPage />
         <p>Contact</p>

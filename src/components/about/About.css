@@ -6,19 +6,23 @@
   align-items: center;
   justify-content: space-evenly;
   padding: 1rem 1rem 1rem 1rem;
-  height: 18vh;
+  height: 20vh;
   width: 36vh;
-
-  background: linear-gradient(0deg, rgba(14, 25, 37, 0.872) 0%, #2a68aa 100%);
-  background: var(--color-gradient-l);
-  border-radius: 2rem;
+  
+   /* background: linear-gradient(0deg, rgba(14, 25, 37, 0.872) 0%, #2a68aa 100%);
+  background: var(--color-gradient-l); */
+  background: rgba(42, 104, 170, .15);
+  border: 1px solid var(--color-primary);
+  border-radius: 1rem;
   overflow: hidden;
   transition: var(--transition);
 }
 
 .about_container {
   display: flex;
-  gap: 3rem;
+  width: var(--container-width-large);
+  gap: 1rem;
+
 }
 
 .about_card:hover {
@@ -28,35 +32,38 @@
   border: white 0.1px solid;
   transition: var(--transition-slow);
 }
-section {
+section { 
   margin-top: -4rem;
 }
 
 .info {
   display: flex;
-
   flex-direction: row;
   justify-content: space-around;
 }
 
 .info p {
   border: 1px solid var(--color-primary);
+  background: rgba(42, 104, 170, .15);
   padding: 1.5rem;
+  width: 20rem;
   border-radius: 0.5rem;
   font-size: 12px;
 }
 
 .info_descr_left {
+  flex-basis: 1;
+  align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   margin-top: 1rem;
-  flex: 1 0 0;
+
 }
 
 .cards_container_right {
-  flex: 2 0 40rem;
 
+  flex-basis: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,6 +80,7 @@ section {
   height: 35vh;
   width: 35vh;
   overflow: hidden;
+  align-self: center;
   border-radius: 2rem;
   transform: rotate(5deg);
   transition: var(--transition);
@@ -83,5 +91,8 @@ section {
 }
 
 .me_con {
-  flex: 0 0 0.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
 }

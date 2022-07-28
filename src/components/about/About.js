@@ -28,19 +28,10 @@ const About = () => {
     <section id="about">
       <h4>Some info about me</h4>
 
-      <div className="container about_container">
-        <div className="me_con">
-          {/* <img src={ME} className="me_img" /> */}
-        </div>
-
+      <div className="about_container">
         <div className="info">
           <div className="info_descr_left">
             <AnimationCanvas scale={dynamicScale} />
-            <p>
-              Driven by creativity, I've dedicated the past two years in the
-              proccess of learning how to build responsive applications for both
-              Android and Web.
-            </p>
           </div>
           <div className="cards_container_right">
             <articlele className="about_card">
@@ -64,6 +55,14 @@ const About = () => {
               </small>
             </article>
           </div>
+          <div className="me_con">
+          <img src={ME} className="me_img" />
+            <p>
+              Driven by creativity, I've dedicated the past two years in the
+              proccess of learning how to build responsive applications for both
+              Android and Web.
+            </p>
+            </div>
         </div>
       </div>
     </section>

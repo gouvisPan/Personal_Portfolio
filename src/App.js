@@ -8,12 +8,17 @@ import Contact from "./components/contact/Contact";
 
 
 function App() {
+
+  const redirect = () =>{
+    
+  }
+  
   return (
     <div className="App">
       <Header />
       <Nav />
       <About />
-      <Projects />
+      <Projects redirect={redirect}/>
       <Contact />
       
     </div>

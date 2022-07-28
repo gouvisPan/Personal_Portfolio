@@ -6,6 +6,10 @@
   gap: 1rem;
 }
 
+.project-card img:hover {
+  cursor: pointer;
+}
+
 .project-card img {
   border-radius: 1rem;
   width: 20vh;
@@ -14,8 +18,8 @@
 }
 
 .project-card img:hover {
-  width: 33vh;
-  height: 72vh;
+  width: 25vh;
+  height: 58vh;
   transition: var(--transition);
 }
 
@@ -39,24 +43,34 @@
 .content-buttons {
   position: absolute;
   right: 0;
+  margin-top: 9rem;
+  margin-right: 3rem;
   display: flex;
+  gap: 1rem;
   flex-direction: column;
   letter-spacing: 10px;
+
 }
+
 #projects {
   margin-top: 12rem;
 }
-button {
+
+
+.active-button { 
   color: var(--color-primary);
-  background-color: transparent;
-  border: 1px white solid;
-  width: 10rem;
-  padding: 1rem;
-  border-radius: 0.5rem 0.5rem 0 0;
+  border-radius: 1.25rem;
+  padding-bottom: .3rem;
+  border: solid var(--color-primary);
+  border-width: 0 0 2px 0;
 }
 
-.button-active {
-  background-color: var(--color-primary);
-  color: white;
-  border: 0px;
+
+.button {  
+  color: var(--color-primary);  
+ 
+}
+
+.button:hover{
+  cursor: pointer;
 }
