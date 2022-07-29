@@ -35,10 +35,21 @@
   gap: 2rem;
 
   padding-top: 2rem;
+
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  -ms-transition: all 1s ease-in;
+  transition: all 1s ease-in;
 }
 
 .android_projects_container {
-  display: none;
+  flex: 0.6 0 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+
+  padding-top: 2rem;
 }
 .content-buttons {
   position: absolute;

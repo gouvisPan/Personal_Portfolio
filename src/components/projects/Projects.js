@@ -37,7 +37,11 @@ const Projects = (props) => {
           <ProjectCard label="Dummy App 2" img={Dummy2} onClick={projectClickHandler}/>
         </div>}
 
-      {isAndroidClicked &&  <div className="android_projects_container"></div> }
+      {isAndroidClicked &&  <div className="android_projects_container">
+          <ProjectCard label="Weather App" img={WeatherApp} onClick={projectClickHandler(1)}/>
+          <ProjectCard label="Dummy App" img={Dummy} onClick={projectClickHandler}/>
+          <ProjectCard label="Dummy App 2" img={WeatherApp} onClick={projectClickHandler}/>
+      </div> }
 
         <div className="content-buttons">
          <GrReactjs className={rCss} onClick={reactClickHandler}/> 
