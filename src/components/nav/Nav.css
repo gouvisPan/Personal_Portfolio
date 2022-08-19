@@ -11,9 +11,7 @@
     rgba(186, 186, 186, 0.1) 0%,
     rgba(231, 229, 229, 0.9556197478991597) 100%
   );
-  padding-left: 70%;
-  gap: 2rem;
-  display: flex;
+ 
 
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
@@ -29,9 +27,9 @@
 .fixed-nav a {
   font-size: 1.1rem;
   background-color: transparent;
-  color: black;
+  color:  var(--color-grey-black);
   
-  border: solid black;
+  border: solid var(--color-grey-dark);
   border-width: 0 1px 0 0;
   display: flex;
   padding-right: 1rem;
@@ -46,10 +44,10 @@
 
 
 .fixed-nav a:hover {
-  color: black;
+  color: var(--color-grey-dark);
 }
 .fixed-nav a.active {
-  color: black;
+  color: var(--color-grey-black);
 }
 
 .floating-nav {
@@ -62,8 +60,6 @@
   transform: translateX(-50%);
   z-index: 2;
 
-  display: flex;
-  justify-content: space-around;
   border-radius: 0 0 0 2rem;
 
   -webkit-transition: all 0.3s ease-in;
@@ -77,15 +73,43 @@
   font-size: 1.2rem;
   padding-top: .3rem;
   background-color: transparent;
-  color: black;
+  color: var(--color-grey-black);
 }
 
 .floating-nav a.active {
   color: var(--color-white);
 }
 
+.floating-nav a:hover {
+  color: var(--color-white);
+}
+
 .floating-nav p {
   display: none;
+}
+.normal-nav-container{
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+
+  width:10rem;
+}
+
+.home-nav{
+  background: rgba(181, 181, 181, 0.516);
+  width: 4rem;
+  height: 4rem;
+  padding: 0.5rem 1.5rem;
+  position: fixed;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: 2;
+
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 @keyframes slidein-low {

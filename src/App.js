@@ -1,27 +1,20 @@
 import "./App.css";
-import About from "./components/about/About";
-import Header from "./components/header/Header";
-import Nav from "./components/nav/Nav";
-import Projects from "./components/projects/Projects";
-import Contact from "./components/contact/Contact";
-
+import Home from "./Pages/Home/Home";
+import ProjectPage from "./Pages/ProjectPage/ProjectPage";
+import Nav from './components/nav/Nav'
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 
 function App() {
-
-  const redirect = () =>{
-    
-  }
   
   return (
-    <div className="App">
-      <Header />
-      <Nav />
-      <About />
-      <Projects redirect={redirect}/>
-      <Contact />
-      
-    </div>
+    <Router>
+        <Nav/>
+        <Routes>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/projects" element={<ProjectPage/>}></Route>
+        </Routes>
+    </Router>
   );
 }
 

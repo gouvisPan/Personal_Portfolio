@@ -19,8 +19,9 @@ header {
 }
 
 #home h5 {
-  color: var(--color-primary);
+  color: var(--color-primary-dark);
 }
+
 .header_contacts {
   display: flex;
   gap: 3rem;

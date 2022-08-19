@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  color: var(--color-white);
+  color: var(--color-grey-light);
   line-height: 1.6;
   background-color: #060125;
   background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-big.png");
@@ -31,10 +31,27 @@ code {
   --color-bg: #1f1f38;
   --color-bg-c: #2c2c6c;
   --color-bg-c-t: #2c2c6c8f;
-  --color-primary: #2a68aa;
-  --color-primary-c: #13136a;
-  --color-white: #fff;
-  --color-light: rgba(240, 240, 240, 0.8);
+
+  --color-primary-white:#e7f5ff;
+  --color-primary-lightest:#d0ebff;
+  --color-primary-lighter:#a5d8ff;
+  --color-primary-light:#4dabf7;
+  --color-primary: #339af0;
+  --color-primary-dark: #228be6;
+  --color-primary-darker: #1c7ed6;
+  --color-primary-darkest: #1864ab;
+
+
+  --color-grey-white:#f8f9fa;
+  --color-grey-lightest:#f8f9fa;
+  --color-grey-lighter:#f1f3f5;
+  --color-grey-light:#ced4da;
+  --color-grey:#adb5bd;
+  --color-grey-dark:#868e96;
+  --color-grey-darker:#343a40;
+  --color-grey-black:#212529;
+
+
   
   --color-gradient: linear-gradient(90deg, rgba(42,104,170,1) 0%, rgba(39,39,158,0.9332107843137255) 45%, rgba(19,19,106,0.9304096638655462) 99%);
   --color-gradient-l: linear-gradient(90deg, rgb(57, 127, 202) 0%, rgba(39,39,158,0.9332107843137255) 45%, rgba(19,19,106,0.9304096638655462) 99%);
@@ -105,21 +122,21 @@ a:hover {
 .btn {
   width: max-content;
   display: inline-block;
-  color: var(--color-primary);
+  color: var(--color-primary-dark);
   padding: 0.75rem 1.2rem;
   cursor: pointer;
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-primary-dark);
   transition: var(--transition);
 }
 
 .btn:hover {
-  background: var(--color-white);
+  background: var(--color-grey-light);
   color: var(--color-bg);
   border-color: transparent;
 }
 
 .btn-main {
-  background: var(--color-primary);
+  background: var(--color-primary-dark);
   color: var(--color-bg);
 }
 

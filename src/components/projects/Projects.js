@@ -7,6 +7,7 @@ import ProjectCard from "./ProjectCard";
 import { GrAndroid } from "react-icons/gr";
 import { GrReactjs } from "react-icons/gr";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Projects = (props) => {
  const [isReactClicked,setIsReactClicked] = useState(true);
@@ -23,24 +24,24 @@ const Projects = (props) => {
   setIsAndroidClicked(true);
   setIsReactClicked(false);
  }
- const projectClickHandler = (num) =>{
-      props.redirect(num);
- }
+
  
   return (
     <section id="projects">
       <h4>A glance into my portfolio</h4>
      <div className="portfolio-container">
      {isReactClicked && <div className="react_projects_container">
-          <ProjectCard label="Weather App" img={WeatherApp} onClick={projectClickHandler(1)}/>
-          <ProjectCard label="Dummy App" img={Dummy} onClick={projectClickHandler}/>
-          <ProjectCard label="Dummy App 2" img={Dummy2} onClick={projectClickHandler}/>
+          <Link to="/projects">
+          <ProjectCard label="Weather App" img={WeatherApp} />
+          </Link>
+          <ProjectCard label="Dummy App" img={Dummy} />
+          <ProjectCard label="Dummy App 2" img={Dummy2}/>
         </div>}
 
       {isAndroidClicked &&  <div className="android_projects_container">
-          <ProjectCard label="Weather App" img={WeatherApp} onClick={projectClickHandler(1)}/>
-          <ProjectCard label="Dummy App" img={Dummy} onClick={projectClickHandler}/>
-          <ProjectCard label="Dummy App 2" img={WeatherApp} onClick={projectClickHandler}/>
+          <ProjectCard label="Weather App" img={WeatherApp}/>
+          <ProjectCard label="Dummy App" img={Dummy}/>
+          <ProjectCard label="Dummy App 2" img={WeatherApp}/>
       </div> }
 
         <div className="content-buttons">

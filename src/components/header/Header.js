@@ -32,10 +32,6 @@ const Header = () => {
         </h1>
         <CvSec />
       </div>
-      {/* <HeaderContacts /> */}
-      {/* <div className="me">
-        <img src={ME} alt="me working" />
-      </div> */}
       <div className="spheres">
         <AnimationCanvas scale={dynamicScale} />
       </div>
