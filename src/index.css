@@ -74,7 +74,6 @@ code {
 .container {
   width: var(--container-width-large);
   margin: 0 auto;
- 
 }
 
 h1,
@@ -98,7 +97,7 @@ h4 {
 }
 
 section {
-  height: 110vh;
+  height: 100vh;
 }
 
 section > h2,
@@ -148,10 +147,47 @@ img {
 
 @media screen and (max-width: 600px) {
   .container {
-    width: var(--container-width-small);
+    margin: 0;
+    width: 100vh;
   }
 
+  .container {
+    width: var(--container-width-small);
+  }
+  section{
+    width: 100vw;
+    height: 60vh;
+  }
   section > h2 {
     margin-top: 2rem;
   }
+
+  
+h1 {
+  font-size: 1.4rem;
+}
+h5 {
+  font-size: 0.8rem;
+}
+
+h4 {
+  padding-top: 1.5rem;
+  font-size: 1.4rem;
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--color-primary-dark);
+  padding: 0.3rem 0.8rem;
+  cursor: pointer;
+  border: 1px solid var(--color-primary-dark);
+  transition: var(--transition);
+}
+
+.btn-main {
+  background: var(--color-primary-dark);
+  color: var(--color-bg);
+}
+
 }

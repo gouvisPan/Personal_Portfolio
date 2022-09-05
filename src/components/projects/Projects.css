@@ -85,3 +85,18 @@
 .button:hover{
   cursor: pointer;
 }
+
+@media (max-width: 600px) {
+  
+  
+.react_projects_container {
+  flex-direction: column;
+  padding-top: 0;
+}
+
+.android_projects_container {
+  flex-direction: column;
+  padding-top: 0;
+}
+  
+}

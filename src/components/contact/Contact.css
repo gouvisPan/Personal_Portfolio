@@ -1,3 +1,7 @@
+section{
+  margin-bottom: 5rem;
+}
+
 .find-me {
   display: flex;
   flex-direction: column;
@@ -221,4 +225,31 @@ div {
   -ms-animation: rotating 2s linear infinite;
   -o-animation: rotating 2s linear infinite;
   animation: rotating 2s linear infinite;
+}
+
+@media (max-width: 600px) {
+  .contact-card {
+    height: 14vh;
+    width: 14vh;
+  }
+  .expandable-contact-card {
+    height: 14vh;
+    width: 14vh;
+  }
+  
+.contact-container {
+  gap: 3rem;
+   margin-top: 2rem;
+}
+
+
+  .find-me {
+    gap: 1rem;
+  }
+  
+  .contact-me {
+    margin-top: 8vh;
+    gap: 1rem;
+  }
+
 }

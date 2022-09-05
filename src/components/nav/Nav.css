@@ -3,15 +3,16 @@
   padding: 1rem 1rem 0.2rem 1rem;
   position: fixed;
   top: -0.5rem;
-  left: 50%;
+  left: 0;
   z-index: 2;
-  transform: translateX(-50%);
+ 
   background: linear-gradient(
     90deg,
     rgba(186, 186, 186, 0.1) 0%,
     rgba(231, 229, 229, 0.9556197478991597) 100%
   );
- 
+  display: flex;
+  justify-content: flex-end;
 
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
@@ -87,12 +88,16 @@
 .floating-nav p {
   display: none;
 }
-.normal-nav-container{
+.fixed-nav .normal-nav-container{
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   gap: 1rem;
-
-  width:10rem;
+}
+.floating-nav .normal-nav-container{
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  margin: 0 0 .2rem 1rem;
 }
 
 .home-nav{

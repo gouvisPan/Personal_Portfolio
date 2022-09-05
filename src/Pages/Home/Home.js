@@ -7,8 +7,7 @@ import Contact from '../../components/contact/Contact';
 const Home = () => {
   return (
     <div className="App">
-      <Header />
-  
+      <Header />  
       <About />
       <Projects/>
       <Contact />
