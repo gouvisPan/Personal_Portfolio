@@ -1,24 +1,21 @@
 .fixed-nav {
-  width: 100%;
+ 
   padding: 1rem 1rem 0.2rem 1rem;
   position: fixed;
   top: -0.5rem;
+  right: 0;
   left: 0;
+  gap:1rem;
   z-index: 2;
  
-  background: linear-gradient(
-    90deg,
-    rgba(186, 186, 186, 0.1) 0%,
-    rgba(231, 229, 229, 0.9556197478991597) 100%
-  );
   display: flex;
   justify-content: flex-end;
 
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  -ms-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.6s ease-in;
+  -moz-transition: all 0.6s ease-in;
+  -o-transition: all 0.6s ease-in;
+  -ms-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 .p {
@@ -28,11 +25,11 @@
 .fixed-nav a {
   font-size: 1.1rem;
   background-color: transparent;
-  color:  var(--color-grey-black);
+  color:  var(--color-white);
+  font-weight: 300;
   
-  border: solid var(--color-grey-dark);
-  border-width: 0 1px 0 0;
   display: flex;
+  gap: .5rem;
   padding-right: 1rem;
 
   flex-direction: column;
@@ -44,45 +41,35 @@
 }
 
 
-.fixed-nav a:hover {
-  color: var(--color-grey-dark);
-}
-.fixed-nav a.active {
-  color: var(--color-grey-black);
+
+.fixed-nav a.active,a:hover{
+  color: var(--color-primary-darker);
 }
 
 .floating-nav {
-  background: rgba(181, 181, 181, 0.516);
-  width: 18%;
-  padding: 0.5rem 1.5rem;
+  padding: 0.8rem 1.5rem;
   position: fixed;
-  top: 0;
-  left: 92%;
-  transform: translateX(-50%);
+  right: 0;
+  top: 0; 
   z-index: 2;
+  gap: 0.3rem;
 
-  border-radius: 0 0 0 2rem;
-
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  -ms-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+  -webkit-transition: all 0.6s ease-in;
+  -moz-transition: all 0.6s ease-in;
+  -o-transition: all 0.6s ease-in;
+  -ms-transition: all 0.6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 .floating-nav a {
   font-size: 1.2rem;
   padding-top: .3rem;
   background-color: transparent;
-  color: var(--color-grey-black);
-}
-
-.floating-nav a.active {
   color: var(--color-white);
 }
 
-.floating-nav a:hover {
-  color: var(--color-white);
+.floating-nav a.active,a:hover{
+  color: var(--color-primary-darker);
 }
 
 .floating-nav p {
@@ -121,8 +108,7 @@
   from {
     top: 0;
   }
-
   to {
-    top: 90%;
+    top: 100%;
   }
 }

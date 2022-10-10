@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ProjectPage = () => {
+const ProjectSlider = () => {
   return (
     <div></div>
   )
 }
 
-export default ProjectPage
+export default ProjectSlider
