@@ -1,77 +1,72 @@
-.project-container{
-    margin: 5rem 3rem;
-    display: flex;
-    justify-content: space-between;
-    height: 50vh;
-    border-radius: 1rem;
-    box-shadow: 2px 4px 5px 0px rgba(255,255,255,.1);
-    
-    gap: 3.5rem;
+.project-container {
+  margin: 5rem 3rem 8rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  height: 50vh;
+  border-radius: 1rem;
+  box-shadow: 2px 4px 5px 0px rgba(255, 255, 255, 0.1);
+
+  gap: 3.5rem;
 }
 
-
-
-.project-img{
-    height: 100%;
-    width: 100%;
-    border-radius: 1rem;
-    object-fit: cover;
+.project-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
 }
 
-.project-details{ 
-    flex-grow: .7; 
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    padding:  -1rem;
-    
-    align-items: flex-start;
+.project-details {
+  flex-grow: 0.7;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: -1rem;
+
+  align-items: flex-start;
 }
 
-.project-details h4{
-    padding-top: 0;
-    font-size: 1.5rem;
+.project-details h4 {
+  padding-top: 0;
+  font-size: 1.5rem;
 }
 
-.project-details p{
-    font-size: 14px;
-    text-align: left;
-    
+.project-details p {
+  font-size: 14px;
+  text-align: left;
 }
 
-.project-details a{
-    color: var(--color-white);
-    align-self: flex-start;
-    font-size: 18px;
-    align-items: center;
-    display: flex;
-    gap: .65rem;
-    
+.project-details a {
+  color: var(--color-white);
+  align-self: flex-start;
+  font-size: 18px;
+  align-items: center;
+  display: flex;
+  gap: 0.65rem;
 }
 
-.project-details a:hover{
-    cursor: pointer;
-    color: var(--color-grey-darker);
-    transform: translateY(-3px);
+.project-details a:hover {
+  cursor: pointer;
+  color: var(--color-grey-darker);
+  transform: translateY(-3px);
 }
-.icon-text{
-    font-size: inherit;
-    align-self: flex-start
-}
-
-.tech-container{
-    display: grid;
-    column-gap: .6rem;
-    grid-template-columns: repeat(5, max-content);
-    margin-bottom: .7rem;
+.icon-text {
+  font-size: inherit;
+  align-self: flex-start;
 }
 
+.tech-container {
+  display: grid;
+  column-gap: 0.6rem;
+  grid-template-columns: repeat(5, max-content);
+  margin-bottom: 0.7rem;
+}
 
-.technology{
-    font-size: 12px;
-    background-color: var(--color-fill-transparent);
-    border-radius: 8px;
-    padding: .2rem .6rem;
+.technology {
+  font-size: 12px;
+  background-color: var(--color-fill-transparent);
+  border-radius: 8px;
+  padding: 0.2rem 0.6rem;
 
-    border: 1px  var(--color-grey-darker) solid;
+  border: 1px var(--color-grey-darker) solid;
 }
