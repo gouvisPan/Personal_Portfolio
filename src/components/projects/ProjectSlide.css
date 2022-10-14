@@ -1,13 +1,27 @@
+.projects-container{
+  display: flex;
+  flex-direction: column;
+  gap:12rem;
+  margin: 6rem 2rem 12rem 2rem;
+
+}
 .project-container {
-  margin: 5rem 3rem 8rem 3rem;
   display: flex;
   justify-content: space-between;
-  height: 50vh;
+  height: 55vh;
+  
   border-radius: 1rem;
   box-shadow: 2px 4px 5px 0px rgba(255, 255, 255, 0.1);
 
-  gap: 3.5rem;
+  gap: 3rem;
 }
+
+.project-img-container{
+  display: inline-flex; 
+  margin-right: 6rem;
+  gap:1.6rem;
+  width:100% ;
+} 
 
 .project-img {
   height: 100%;
@@ -15,9 +29,13 @@
   border-radius: 1rem;
   object-fit: cover;
 }
+.project-a-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+}
 
 .project-details {
-  flex-grow: 0.7;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -34,12 +52,13 @@
 .project-details p {
   font-size: 14px;
   text-align: left;
+  padding-right: 1rem;
 }
 
 .project-details a {
   color: var(--color-white);
   align-self: flex-start;
-  font-size: 18px;
+  font-size: 16px;
   align-items: center;
   display: flex;
   gap: 0.65rem;

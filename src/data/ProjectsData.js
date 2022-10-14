@@ -7,6 +7,12 @@ import c1 from "../assets/crypto-live/cl-1.png";
 import c2 from "../assets/crypto-live/cl-2.png";
 import cM from "../assets/crypto-live/cl-M.png";
 
+
+import main from "../assets/hypecoach/main-fragment.png"
+import diet from "../assets/hypecoach/diet-fragment.png"
+import profile from "../assets/hypecoach/profile.png"
+
+
 const p1 = {
   name: "3D-Commerce",
   description:
@@ -26,6 +32,7 @@ const p1 = {
   githubLink: "https://github.com/gouvisPan/e-commerce",
   demoLink: "https://github.com/gouvisPan/e-commerce",
   imgs: [eComLanding, eComStore, eComCustom, eComLandingM],
+  android: false
 };
 const p2 = {
   name: "Crypto Live",
@@ -33,10 +40,11 @@ const p2 = {
     "A cryptocurrency stats and information monitoring application. The webApp fetches various stats  for " +
     "the first -by market cap- 100 coins/tokens and displays it to the user. The App also provides a bookmark mechanism " +
     "via local storage.",
-  technologiesUsed: ["Javascript", "SASS", "Coingecko API", "MCV architecture"],
+  technologiesUsed: ["Javascript","HTML", "SASS", "Coingecko API", "MCV architecture" ,"LocalStorage"],
   githubLink: "https://github.com/gouvisPan/cryptoPrices",
   demoLink: "",
   imgs: [c1, c2, cM],
+  android: false
 };
 
 const p3 = {
@@ -48,7 +56,7 @@ const p3 = {
   technologiesUsed: [
     "Kotlin",
     "MVVM architecture",
-    "Room DB",
+    "Room",
     "Firebase Auth",
     "Firebase CloudStorage",
     "Navigation Component",
@@ -56,7 +64,7 @@ const p3 = {
   ],
   githubLink: "https://github.com/gouvisPan/HypeCoach",
   demoLink: "",
-  imgs: [],
+  imgs: [main,diet,profile],
   android: true,
 };
 
@@ -68,7 +76,9 @@ const p4 = {
   githubLink: "https://github.com/gouvisPan/ReactWeatherApp",
   demoLink: "",
   imgs: [],
+android: false
 };
+
 const ProjectsData = [p1, p2, p3, p4];
 
 export default ProjectsData;
