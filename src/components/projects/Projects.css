@@ -13,7 +13,7 @@
 .project-card img {
   border-radius: 1rem;
   width: 20vh;
-  height: 45vh;
+  height: 50vh;
   transition: var(--transition);
 }
 
@@ -60,43 +60,36 @@
   gap: 1rem;
   flex-direction: column;
   letter-spacing: 10px;
-
 }
 
 #projects {
   margin-top: 12rem;
 }
 
-
-.active-button { 
+.active-button {
   color: var(--color-primary);
   border-radius: 1.25rem;
-  padding-bottom: .3rem;
+  padding-bottom: 0.3rem;
   border: solid var(--color-primary);
   border-width: 0 0 2px 0;
 }
 
-
-.button {  
-  color: var(--color-primary);  
- 
+.button {
+  color: var(--color-primary);
 }
 
-.button:hover{
+.button:hover {
   cursor: pointer;
 }
 
 @media (max-width: 600px) {
-  
-  
-.react_projects_container {
-  flex-direction: column;
-  padding-top: 0;
-}
+  .react_projects_container {
+    flex-direction: column;
+    padding-top: 0;
+  }
 
-.android_projects_container {
-  flex-direction: column;
-  padding-top: 0;
-}
-  
+  .android_projects_container {
+    flex-direction: column;
+    padding-top: 0;
+  }
 }

@@ -7,6 +7,13 @@ import c1 from "../assets/crypto-live/cl-1.png";
 import c2 from "../assets/crypto-live/cl-2.png";
 import cM from "../assets/crypto-live/cl-M.png";
 
+import h1 from "../assets/hypecoach/main-fragment.png";
+import h2 from "../assets/hypecoach/diet-fragment.png";
+import h3 from "../assets/hypecoach/menu.png";
+import h4 from "../assets/hypecoach/profile.png";
+import h5 from "../assets/hypecoach/register.png";
+import h6 from "../assets/hypecoach/working-out.png";
+
 const p1 = {
   name: "3D-Commerce",
   description:
@@ -26,6 +33,7 @@ const p1 = {
   githubLink: "https://github.com/gouvisPan/e-commerce",
   demoLink: "https://github.com/gouvisPan/e-commerce",
   imgs: [eComLanding, eComStore, eComCustom, eComLandingM],
+  android: false,
 };
 const p2 = {
   name: "Crypto Live",
@@ -36,7 +44,8 @@ const p2 = {
   technologiesUsed: ["Javascript", "SASS", "Coingecko API", "MCV architecture"],
   githubLink: "https://github.com/gouvisPan/cryptoPrices",
   demoLink: "",
-  imgs: [c1, c2, cM],
+  imgs: [c1, c2, [cM, h1, h2]],
+  android: false,
 };
 
 const p3 = {
@@ -56,7 +65,10 @@ const p3 = {
   ],
   githubLink: "https://github.com/gouvisPan/HypeCoach",
   demoLink: "",
-  imgs: [],
+  imgs: [
+    [h1, h2, h3],
+    [h4, h5, h6],
+  ],
   android: true,
 };
 
@@ -68,6 +80,7 @@ const p4 = {
   githubLink: "https://github.com/gouvisPan/ReactWeatherApp",
   demoLink: "",
   imgs: [],
+  android: false,
 };
 const ProjectsData = [p1, p2, p3, p4];
 

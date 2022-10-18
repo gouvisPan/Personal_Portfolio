@@ -3,19 +3,12 @@ import "./ProjectSlide.css";
 import ProjectTech from "./ProjectTech";
 import { FiGithub } from "react-icons/fi";
 import { AiOutlineLink } from "react-icons/ai";
+import ImageSlider from "./ImageSlider";
 
 const ProjectSlide = (props) => {
-  const img = props.android ? (
-    <div className="project-img-container">
-      <img src={props.imgs[0]} className="project-a-img"></img>
-    </div>
-  ) : (
-    <img src={props.imgs[0]} className="project-img"></img>
-  );
-
   return (
     <div className="project-container">
-      {img}
+      <ImageSlider src={props.imgs} order={props.order} />
       <div className="project-details">
         <h4>{props.name}</h4>
         <p>{props.desc}</p>

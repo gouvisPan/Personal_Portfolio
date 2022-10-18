@@ -1,0 +1,56 @@
+.slider-container {
+  min-width: 45rem;
+  width: fit-content;
+  display: flex;
+  gap: 0;
+}
+
+.project-img {
+  height: 330px;
+  border-radius: 1rem;
+  object-fit: cover;
+  align-self: center;
+  justify-self: center;
+}
+.project-img-small {
+  width: 100%;
+  height: auto;
+}
+
+.slide {
+  max-width: 40rem;
+  border-radius: 2px;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: cliped;
+}
+
+.slide li {
+  flex-basis: 10rem;
+}
+
+.hidden {
+  opacity: 1;
+}
+.shown {
+  opacity: 0;
+}
+
+.arrow {
+  font-size: 42px;
+  position: absolute;
+  z-index: 10;
+}
+.arrow:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.left {
+  left: 50px;
+}
+
+.right {
+  right: 50px;
+}

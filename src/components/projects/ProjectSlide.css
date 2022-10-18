@@ -1,19 +1,13 @@
 .project-container {
   margin: 5rem 3rem 8rem 3rem;
   display: flex;
-  justify-content: space-between;
-  height: 50vh;
+  align-items: center;
+
+  height: 45vh;
   border-radius: 1rem;
   box-shadow: 2px 4px 5px 0px rgba(255, 255, 255, 0.1);
 
-  gap: 3.5rem;
-}
-
-.project-img {
-  height: 100%;
-  width: 100%;
-  border-radius: 1rem;
-  object-fit: cover;
+  gap: 2rem;
 }
 
 .project-details {
