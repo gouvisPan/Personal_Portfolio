@@ -19,21 +19,29 @@ const ImageSlider = (props) => {
 
   return (
     <div className="slider-container" style={{ order: props.order }}>
-      <IoIosArrowDropleft className="arrow left" onClick={prevSlide} />
-      <IoIosArrowDropright className="arrow right" onClick={nextSlide} />
       {props.src.map((item, i) => {
         return (
-          <div className={currentSlide === i ? "slide hidden" : "slide shown"}>
+          <div className={currentSlide === i ? "slide show" : "slide"}>
             {Array.isArray(item)
-              ? currentSlide === i &&
-                item.map((img, j) => (
-                  <li>
-                    <img src={img} className="project-img-small" key={j}></img>
-                  </li>
-                ))
+              ? currentSlide === i && (
+                  <div className="three-img-container">
+                    {item.map((img, j) => (
+                      <li>
+                        <img
+                          src={img}
+                          className="project-img-small"
+                          key={j}
+                        ></img>
+                      </li>
+                    ))}
+                  </div>
+                )
               : currentSlide === i && (
                   <img src={item} className="project-img"></img>
                 )}
+
+            <IoIosArrowDropleft className="arrow left" onClick={prevSlide} />
+            <IoIosArrowDropright className="arrow right" onClick={nextSlide} />
           </div>
         );
       })}

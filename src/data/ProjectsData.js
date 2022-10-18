@@ -23,16 +23,21 @@ const p1 = {
   technologiesUsed: [
     "Javascript",
     "React",
-    "MaterialUI",
     "Redux",
     "React-Router",
     "Commerce-JS API",
+    "MaterialUI",
     "Stripe API",
     "G-Maps Api",
   ],
   githubLink: "https://github.com/gouvisPan/e-commerce",
   demoLink: "https://github.com/gouvisPan/e-commerce",
-  imgs: [eComLanding, eComStore, eComCustom, eComLandingM],
+  imgs: [
+    eComLanding,
+    eComStore,
+    eComCustom,
+    [eComLandingM, eComLandingM, eComLandingM],
+  ],
   android: false,
 };
 const p2 = {
@@ -41,7 +46,7 @@ const p2 = {
     "A cryptocurrency stats and information monitoring application. The webApp fetches various stats  for " +
     "the first -by market cap- 100 coins/tokens and displays it to the user. The App also provides a bookmark mechanism " +
     "via local storage.",
-  technologiesUsed: ["Javascript", "SASS", "Coingecko API", "MCV architecture"],
+  technologiesUsed: ["Javascript", "SASS", "MCV architecture", "Coingecko API"],
   githubLink: "https://github.com/gouvisPan/cryptoPrices",
   demoLink: "",
   imgs: [c1, c2, [cM, h1, h2]],
