@@ -14,7 +14,7 @@ const ProjectSlide = (props) => {
         <p>{props.desc}</p>
         <div className="tech-container">
           {props.tech.map((tech) => (
-            <ProjectTech techName={tech} />
+            <ProjectTech techName={tech} key={tech} />
           ))}
         </div>
 

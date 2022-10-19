@@ -1,0 +1,46 @@
+.notification {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 1.2rem;
+  color: white;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  border-radius: 0 0 0.4rem 0;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: -0.1rem;
+  padding: 0.2rem 1rem;
+  z-index: 12;
+  animation: 4s alternate slidein;
+
+  background-color: rgb(61, 61, 61);
+}
+
+.error {
+  border-bottom: rgb(150, 25, 25) 6px solid;
+}
+
+.success {
+  border-bottom: rgb(31, 150, 25) 6px solid;
+}
+
+.message-icon {
+  font-size: 1.6rem;
+}
+
+@keyframes slidein {
+  0% {
+    top: -10rem;
+  }
+  10%,
+  70% {
+    top: 0;
+  }
+  70% {
+  }
+  100% {
+    top: -10rem;
+  }
+}

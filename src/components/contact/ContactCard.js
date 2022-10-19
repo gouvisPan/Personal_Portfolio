@@ -1,7 +1,7 @@
 import React from "react";
+import "./Contact.css";
 
 const ContactCard = (props) => {
-  
   const css = props.hide ? "hidden-card" : "contact-card";
 
   return (

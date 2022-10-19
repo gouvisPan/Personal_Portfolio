@@ -3,7 +3,7 @@ import { FaUniversity } from "react-icons/fa";
 import { FaFolderOpen } from "react-icons/fa";
 import { AiFillStar } from "react-icons/ai";
 import "./About.css";
-import ME from "./../../assets/man.jpg";
+import ME from "./../../assets/profile.png";
 import AnimationCanvas from "../UI/AnimationCanvas";
 import useScroll from "../../hooks/useScroll";
 
@@ -29,18 +29,18 @@ const About = () => {
       <h4>Some info about me</h4>
 
       <div className="about_container">
-          <div className="info_descr_left">
-            <AnimationCanvas scale={dynamicScale} />
-          </div>
+        <div className="info_descr_left">
+          <AnimationCanvas scale={dynamicScale} />
+        </div>
         <div className="info">
           <div className="cards_container_right">
-            <articlele className="about_card">
+            <article className="about_card">
               <FaUniversity />
               <h5>Education</h5>
               <small>
                 <strong>Excellence </strong> at Applied Informatics UoM
               </small>
-            </articlele>
+            </article>
             <article className="about_card">
               <AiFillStar />
               <h5>Skillset</h5>

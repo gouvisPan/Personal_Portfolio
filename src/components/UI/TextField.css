@@ -1,40 +1,55 @@
-input{
-    height: 100%;
-    padding: .2rem;
-    background-color: rgb(199, 196, 196);
-    border-radius: .5rem;
+.error-m {
+  color: #b81616;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  font-size: 1rem;
+  position: absolute;
+  left: 8rem;
+  bottom: -1.8rem;
 }
 
-.error{
-    position: absolute;
-    margin-top: 2rem;
-    color: #cc0033;
-    font-size: .6rem;
-    padding: -2rem;
+input {
+  height: 100%;
+
+  padding: 0.2rem;
+  background-color: rgb(199, 196, 196);
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+}
+textarea {
+  background-color: rgb(199, 196, 196);
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
 }
 
-label{
-    text-align: center;
-    font-size: 1.2rem;
-    margin-right: 1rem;
+.text-field-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
 }
-.text-field-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.text-field-content label {
+  font-size: 1.2rem;
+  flex: 0.2 1 0;
+  text-align: start;
+  justify-self: flex-end;
 }
-
-.field{
-    display: flex;
-    flex-direction: row;
-    gap:1rem;
-    justify-content: space-between;
-   
+.text-field-content input {
+  flex: 0.4 1 0;
 }
 
-.message{
-    border-radius: .5rem;
-    height: 6rem;
-    align-self: flex-end;
-    vertical-align: top;
+.field {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.message {
+  border-radius: 0.5rem;
+  height: 7rem;
+}
+.field {
+  width: 20rem;
+  height: 2.4rem;
 }

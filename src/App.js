@@ -1,20 +1,18 @@
 import "./App.css";
 import Home from "./Pages/Home/Home";
-import Nav from './components/nav/Nav'
+import Nav from "./components/nav/Nav";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import useWindowSize from "./hooks/useWindowSize";
-
+import { Fragment } from "react";
 
 function App() {
-  const [height,width] = useWindowSize();
+  const [height, width] = useWindowSize();
 
   return (
-    <Router>
-        {width > 600 ? <Nav/> : ""}
-        <Routes>
-        <Route path="/" element={<Home />}></Route>
-        </Routes>
-    </Router>
+    <Fragment>
+      {width > 600 ? <Nav /> : ""}
+      <Home />
+    </Fragment>
   );
 }
 

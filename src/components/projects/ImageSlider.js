@@ -21,7 +21,10 @@ const ImageSlider = (props) => {
     <div className="slider-container" style={{ order: props.order }}>
       {props.src.map((item, i) => {
         return (
-          <div className={currentSlide === i ? "slide show" : "slide"}>
+          <div
+            className={currentSlide === i ? "slide show" : "slide"}
+            key={item}
+          >
             {Array.isArray(item)
               ? currentSlide === i && (
                   <div className="three-img-container">

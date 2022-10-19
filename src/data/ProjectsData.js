@@ -2,10 +2,14 @@ import eComLanding from "../assets/e-commerce/Landing-Page.png";
 import eComStore from "../assets/e-commerce/Store.png";
 import eComCustom from "../assets/e-commerce/Custom.png";
 import eComLandingM from "../assets/e-commerce/Landing-Mobile.png";
+import eComCartM from "../assets/e-commerce/Cart-Mobile.png";
+import eComUploadM from "../assets/e-commerce/Upload-Mobile.png";
 
 import c1 from "../assets/crypto-live/cl-1.png";
 import c2 from "../assets/crypto-live/cl-2.png";
-import cM from "../assets/crypto-live/cl-M.png";
+import cm1 from "../assets/crypto-live/cl-m1.png";
+import cm2 from "../assets/crypto-live/cl-m2.png";
+import cm3 from "../assets/crypto-live/cl-m3.png";
 
 import h1 from "../assets/hypecoach/main-fragment.png";
 import h2 from "../assets/hypecoach/diet-fragment.png";
@@ -36,7 +40,7 @@ const p1 = {
     eComLanding,
     eComStore,
     eComCustom,
-    [eComLandingM, eComLandingM, eComLandingM],
+    [eComLandingM, eComCartM, eComUploadM],
   ],
   android: false,
 };
@@ -49,7 +53,7 @@ const p2 = {
   technologiesUsed: ["Javascript", "SASS", "MCV architecture", "Coingecko API"],
   githubLink: "https://github.com/gouvisPan/cryptoPrices",
   demoLink: "",
-  imgs: [c1, c2, [cM, h1, h2]],
+  imgs: [c1, c2, [cm1, cm2, cm3]],
   android: false,
 };
 
