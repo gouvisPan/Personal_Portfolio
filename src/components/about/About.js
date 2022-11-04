@@ -6,10 +6,11 @@ import "./About.css";
 import ME from "./../../assets/profile.png";
 import AnimationCanvas from "../UI/AnimationCanvas";
 import useScroll from "../../hooks/useScroll";
+import { useInView } from "react-intersection-observer";
 
 const About = () => {
   const scrollPosition = useScroll();
-
+  const { ref, inView } = useInView();
   let dynamicScale = 0;
 
   if (scrollPosition > 300) {
@@ -28,11 +29,11 @@ const About = () => {
     <section id="about">
       <h4>Some info about me</h4>
 
-      <div className="about_container">
+      <div className="about-container">
         <div className="info_descr_left">
           <AnimationCanvas scale={dynamicScale} />
         </div>
-        <div className="info">
+        <div ref={ref} className={`info ${inView ? "slide" : ""}`}>
           <div className="cards_container_right">
             <article className="about_card">
               <FaUniversity />
