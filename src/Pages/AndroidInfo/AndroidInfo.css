@@ -1,0 +1,100 @@
+.presentation-container {
+  margin-left: 10rem;
+  margin-right: 10rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.presentation-container .header {
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 4rem;
+}
+
+.header h1 {
+  font-size: 48px;
+  letter-spacing: 0.8px;
+}
+
+.header p {
+  font-size: 22px;
+}
+
+.presentation-container .description {
+  margin-top: -3rem;
+}
+
+.fixed-home {
+  z-index: 10;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  padding: 0.7rem;
+  border-radius: 30px;
+  color: var(--color-grey-white);
+  border: 2px solid var(--color-primary-dark);
+  background-color: transparent;
+
+  height: 3rem;
+  width: 3rem;
+}
+
+.fixed-home:hover {
+  cursor: pointer;
+  filter: brightness(120%);
+}
+
+.positioning-wrapper {
+  align-self: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+@media screen and (max-width: 600px) {
+  .presentation-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .presentation-container .header {
+    margin-top: 3rem;
+  }
+
+  .header h1 {
+    font-size: 38px;
+    letter-spacing: 0.8px;
+  }
+
+  .header p {
+    font-size: 22px;
+  }
+
+  .presentation-container .description {
+    margin-top: -3rem;
+  }
+
+  .fixed-home {
+    position: fixed;
+    top: 1.5rem;
+    right: 1.5rem;
+    padding: 0.7rem;
+    border-radius: 30px;
+    color: var(--color-grey-white);
+    border: 2px solid var(--color-primary-dark);
+    background-color: transparent;
+
+    height: 3rem;
+    width: 3rem;
+  }
+
+  .positioning-wrapper {
+    align-self: center;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+  }
+}

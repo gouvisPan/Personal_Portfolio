@@ -4,7 +4,7 @@
   font-weight: 300;
   font-size: 1rem;
   position: absolute;
-  left: 8rem;
+  left: 0rem;
   bottom: -1.8rem;
 }
 
@@ -52,4 +52,28 @@ textarea {
 .field {
   width: 20rem;
   height: 2.4rem;
+}
+
+@media (max-width: 600px) {
+  .text-field-content {
+    flex-direction: column;
+  }
+
+  .text-field-content label {
+    font-size: 1.2rem;
+    flex: 1 1 0;
+    text-align: start;
+    justify-self: flex-end;
+  }
+  .text-field-content input {
+    flex: 1 1 0;
+    width: auto;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+  }
 }

@@ -5,9 +5,9 @@ import "./ImageSlider.css";
 import { IoIosArrowDropleft } from "react-icons/io";
 import { IoIosArrowDropright } from "react-icons/io";
 
-const ImageSlider = (props) => {
+const ImageSlider = ({ src, order, scale = 1 }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const length = props.src.length;
+  const length = src.length;
 
   const nextSlide = () => {
     setCurrentSlide(currentSlide === length - 1 ? 0 : currentSlide + 1);
@@ -18,8 +18,8 @@ const ImageSlider = (props) => {
   };
 
   return (
-    <div className="slider-container" style={{ order: props.order }}>
-      {props.src.map((item, i) => {
+    <div className={`slider-container " ${order === 1 ? "order" : ""}`}>
+      {src.map((item, i) => {
         return (
           <div
             className={currentSlide === i ? "slide show" : "slide"}
@@ -27,12 +27,18 @@ const ImageSlider = (props) => {
           >
             {Array.isArray(item)
               ? currentSlide === i && (
-                  <div className="three-img-container">
+                  <div
+                    className={`three-img-container ${
+                      scale === 1 ? "" : "scaled"
+                    }`}
+                  >
                     {item.map((img, j) => (
                       <li>
                         <img
                           src={img}
-                          className="project-img-small"
+                          className={`project-img-small ${
+                            scale === 1 ? "" : "showcase"
+                          }`}
                           key={j}
                         ></img>
                       </li>

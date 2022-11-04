@@ -1,0 +1,11 @@
+.error-page {
+  margin-top: 10rem;
+  margin-left: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.error-page a:hover {
+  filter: brightness(80%);
+}

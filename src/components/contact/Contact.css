@@ -59,6 +59,22 @@ div {
   border: 0px var(--color-primary) solid;
 }
 
+@media (max-width: 600px) {
+  .contact-cards {
+    gap: 0.5rem;
+  }
+  .contact-card {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .contact-container {
+    gap: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
 @keyframes bounce {
   0%,
   100% {
@@ -150,16 +166,4 @@ div {
   -ms-animation: rotating 2s linear infinite;
   -o-animation: rotating 2s linear infinite;
   animation: rotating 2s linear infinite;
-}
-
-@media (max-width: 600px) {
-  .contact-card {
-    height: 14vh;
-    width: 14vh;
-  }
-
-  .contact-container {
-    gap: 3rem;
-    margin-top: 2rem;
-  }
 }
