@@ -1,8 +1,6 @@
 import React from "react";
 import "./Header.css";
 import CvSec from "./CvSec";
-import ME from "./../../assets/me.png";
-import HeaderContacts from "./HeaderContacts";
 import Typewriter from "react-ts-typewriter";
 import AnimationCanvas from "../UI/AnimationCanvas";
 import useScroll from "../../hooks/useScroll";

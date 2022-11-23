@@ -9,12 +9,12 @@ const ProjectSlider = () => {
     <div>
       {[p1, p2, p3].map((project, i) => (
         <ProjectSlide
-          key={project.git}
+          key={project.githubLink}
           name={project.name}
           desc={project.description}
           tech={project.technologiesUsed}
           git={project.githubLink}
-          demo={project.demo}
+          demo={project.demoLink}
           imgs={project.imgs}
           android={project.android}
           order={i % 2}

@@ -1,5 +1,6 @@
 .about_card {
   display: flex;
+  flex-direction: row;
   gap: 0.1rem;
   font-size: 1.1rem;
   flex-direction: column;
@@ -18,10 +19,12 @@
   transition: var(--transition);
 }
 
-.about_container {
+.about-container {
+  margin-top: 4rem;
   display: flex;
+  flex-direction: row;
   width: var(--container-width-large);
-  gap: 1rem;
+  gap: 0rem;
 }
 
 .about_card:hover {
@@ -39,9 +42,13 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  gap: 6rem;
+  gap: 10rem;
+  opacity: 0;
 }
-
+.slide-in {
+  transition: 0.2s ease-in;
+  opacity: 1;
+}
 .info p {
   border: 1px solid var(--color-primary);
   background: rgba(42, 104, 170, 0.15);
@@ -94,35 +101,11 @@ section {
   justify-content: space-around;
   gap: 1rem;
 }
-.slide {
-  animation-duration: 2s;
-  animation-name: slide-top;
-}
-
-@-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
-  }
-}
-@keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-    transform: translateY(-100px);
-  }
-}
 
 @media (max-width: 600px) {
-  .about_container {
+  .about-container {
     flex-direction: column;
+    width: auto;
   }
 
   .me_con {
@@ -177,6 +160,7 @@ section {
     flex-direction: column;
     justify-content: space-evenly;
     margin-top: 1rem;
+    display: none;
   }
 
   .cards_container_right {
@@ -185,25 +169,8 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
-    padding: 0rem;
-    margin: 0 1rem 0 1rem;
 
     /* background: rgba(141, 120, 153, 0.384); */
     border-radius: 1.3rem;
-  }
-
-  .me_img {
-    height: 35vh;
-    width: 35vh;
-    overflow: hidden;
-    align-self: center;
-    border-radius: 2rem;
-    transform: rotate(5deg);
-    transition: var(--transition);
-  }
-
-  .me_img:hover {
-    transform: rotate(0deg);
   }
 }

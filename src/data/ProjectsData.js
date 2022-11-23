@@ -35,7 +35,7 @@ const p1 = {
     "G-Maps Api",
   ],
   githubLink: "https://github.com/gouvisPan/e-commerce",
-  demoLink: "https://github.com/gouvisPan/e-commerce",
+  demoLink: "https://d-commerce-f3fe7.web.app",
   imgs: [
     eComLanding,
     eComStore,

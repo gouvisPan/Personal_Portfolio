@@ -33,8 +33,9 @@ const ImageSlider = ({ src, order, scale = 1 }) => {
                     }`}
                   >
                     {item.map((img, j) => (
-                      <li>
+                      <li key={img}>
                         <img
+                          alt="project"
                           src={img}
                           className={`project-img-small ${
                             scale === 1 ? "" : "showcase"

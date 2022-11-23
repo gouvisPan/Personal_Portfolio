@@ -63,17 +63,14 @@ h5 {
   margin-top: -16rem;
 }
 
-
 /* ==== SMARTPHONES ==== */
 
 @media screen and (max-width: 600px) {
-  
   .header_container {
     height: 100vh;
-    width:100vw;
+    width: 100vw;
     margin: 2rem;
   }
-
 
   header {
     height: 100vh;
@@ -81,27 +78,25 @@ h5 {
     padding-top: 1rem;
     overflow: hidden;
   }
-  
+
   .cv_sec {
     margin-top: 2rem;
-  
+
     display: flex;
     gap: 1rem;
     justify-content: center;
   }
-  
 
-  
   #home h5 {
     color: var(--color-primary-dark);
   }
-  
+
   .header_contacts {
     display: flex;
     gap: 3rem;
     align-items: center;
   }
-  
+
   .me {
     width: max-content;
     height: 15rem;
@@ -109,14 +104,14 @@ h5 {
     left: calc(50% - 15rem);
     margin-top: 2rem;
   }
-  
+
   .cv {
     display: flex;
     gap: 0.6rem;
     font-size: 2rem;
     margin-top: 1.5rem;
   }
-  
+
   .tagcloud {
     font-family: "Poppins", sans-serif;
     font-size: 20px;
@@ -126,32 +121,19 @@ h5 {
   .tagcloud--item:hover {
     color: #36454f;
   }
-  
+
   .header_container h1,
   h5 {
     margin-bottom: 0.2rem;
   }
-  
+
   .spheres {
     position: absolute;
-    bottom: 0;
+    bottom: 10%;
     right: 0;
-    margin-top: 0rem;
   }
 
-  .cv{
+  .cv {
     font-size: 1.2rem;
   }
 }
-
-/* ==== TABLETS ==== */
-
-/* @media screen and (max-width: 1024px) {
-  header {
-    height: 65vh;
-  }
-
-  .cv{
-    font-size: 1.2rem;
-  }
-} */

@@ -33,7 +33,7 @@ const About = () => {
         <div className="info_descr_left">
           <AnimationCanvas scale={dynamicScale} />
         </div>
-        <div ref={ref} className={`info ${inView ? "slide" : ""}`}>
+        <div ref={ref} className={`info ${inView ? "slide-in" : ""}`}>
           <div className="cards_container_right">
             <article className="about_card">
               <FaUniversity />

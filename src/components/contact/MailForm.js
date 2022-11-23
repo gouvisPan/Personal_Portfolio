@@ -66,7 +66,7 @@ const MailForm = (props) => {
     >
       {(formik) => (
         <div className="form-container">
-          <h4>Send me a direct mail</h4>
+          <h4>Send me a direct email</h4>
           <Form className="form-content" ref={form}>
             <div className="text-fields">
               <TextField

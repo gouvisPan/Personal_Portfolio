@@ -5,10 +5,15 @@ import { FiGithub } from "react-icons/fi";
 import { AiOutlineLink } from "react-icons/ai";
 import ImageSlider from "./ImageSlider";
 import { Link } from "react-router-dom";
+import { useInView } from "react-intersection-observer";
 
 const ProjectSlide = (props) => {
+  const { ref, inView } = useInView();
   return (
-    <div className="project-container">
+    <div
+      className={inView ? `project-container slide-in` : "project-container"}
+      ref={ref}
+    >
       <ImageSlider src={props.imgs} order={props.order} />
       <div className="project-details">
         <h4>{props.name}</h4>
