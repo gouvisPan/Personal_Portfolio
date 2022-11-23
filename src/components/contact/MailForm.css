@@ -41,9 +41,8 @@ h4 {
   cursor: pointer;
   background: rgb(149, 149, 149);
   color: rgb(22, 22, 22);
-
-  transition: var();
 }
+
 .buttons button:active {
   background-color: rgb(68, 68, 68);
 }
