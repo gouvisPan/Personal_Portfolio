@@ -52,7 +52,7 @@ const p2 = {
     "via local storage.",
   technologiesUsed: ["Javascript", "SASS", "MCV architecture", "Coingecko API"],
   githubLink: "https://github.com/gouvisPan/cryptoPrices",
-  demoLink: "",
+  demoLink: "https://luminous-clafoutis-2290a4.netlify.app",
   imgs: [c1, c2, [cm1, cm2, cm3]],
   android: false,
 };
