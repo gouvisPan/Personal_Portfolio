@@ -8,20 +8,12 @@
   justify-content: space-evenly;
   padding: 1rem 1rem 1rem 1rem;
   height: 20vh;
-  width: 36vh;
+  width: 25vw;
   background: rgba(42, 104, 170, 0.15);
   border: 1px solid var(--color-primary);
   border-radius: 1rem;
   overflow: hidden;
   transition: var(--transition);
-}
-
-.about-container {
-  margin-top: 4rem;
-  display: flex;
-  flex-direction: row;
-  width: var(--container-width-large);
-  gap: 0rem;
 }
 
 .about_card:hover {
@@ -33,80 +25,33 @@
 }
 section {
   margin-top: -4rem;
+  min-height: 40vh;
 }
 
-.info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  gap: 10rem;
-  opacity: 0;
-}
 .slide-in {
   transition: 0.2s ease-in;
   opacity: 1;
 }
-.info p {
-  border: 1px solid var(--color-primary);
-  background: rgba(42, 104, 170, 0.15);
-  padding: 1.5rem;
-  width: 20rem;
-  border-radius: 0.5rem;
-  font-size: 12px;
-}
 
-.info_descr_left {
-  flex-basis: 1;
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin-top: 1rem;
-}
-
-.cards_container_right {
+.cards_container {
   flex-basis: 1;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 5rem;
   padding: 2rem;
-  margin: 0 1rem 0 1rem;
+  margin: 3rem 1rem 0 1rem;
   border-radius: 1.3rem;
 }
 
-.me_img {
-  height: 35vh;
-  width: 35vh;
-  overflow: hidden;
-  align-self: center;
-  border-radius: 2rem;
-  transform: rotate(5deg);
-  transition: var(--transition);
+#about {
+  height: 100vh;
 }
 
-.me_img:hover {
-  transform: rotate(0deg);
-}
-
-.me_con {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  gap: 1rem;
+.carousels {
 }
 
 @media (max-width: 600px) {
-  .about-container {
-    flex-direction: column;
-    width: auto;
-  }
-
-  .me_con {
-    display: none;
-  }
-
   .about_card {
     font-size: 1.3rem;
     flex-direction: column;
@@ -136,34 +81,17 @@ section {
     height: max-content;
   }
 
-  .info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 6rem;
-  }
-
-  .info p {
-    padding: 0;
-    width: 90vh;
-  }
-
-  .info_descr_left {
-    flex-basis: 1;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    margin-top: 1rem;
-    display: none;
-  }
-
-  .cards_container_right {
+  .cards_container {
     flex-basis: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 1.3rem;
+  }
+}
+@media (max-width: 1250px) {
+  #about {
+    display: none;
   }
 }

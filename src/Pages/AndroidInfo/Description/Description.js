@@ -8,7 +8,7 @@ const Description = () => {
   const [textIsShown, setTextIsShown] = useState(false);
 
   const contentStr =
-    "   This project was developed in the context of my university thesis and" +
+    "   This project was developed in the context of my Bachelor's thesis and" +
     " therefore integrates the processes of modeling, architectural designing" +
     " and developing the Android application. Initially I conducted a" +
     " competitive analysis among the most popular related applications," +

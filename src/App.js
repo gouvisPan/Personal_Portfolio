@@ -1,15 +1,11 @@
 import "./App.css";
 import Home from "./Pages/Home/Home";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import useWindowSize from "./hooks/useWindowSize";
-import { Fragment } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Error from "./Pages/Error/Error";
 import AndroidInfo from "./Pages/AndroidInfo/AndroidInfo";
 import ScrollToTop from "./components/helpers/ScrollToTop";
 
 function App() {
-  const [height, width] = useWindowSize();
-
   return (
     <Router>
       <ScrollToTop>

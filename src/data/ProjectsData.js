@@ -93,4 +93,38 @@ const p4 = {
 };
 const ProjectsData = [p1, p2, p3, p4];
 
+const webMainArray = [
+  "Javascript",
+  "React",
+  "CSS",
+  "SCSS",
+  "NodeJS",
+  "Express",
+  "MongoDB",
+];
+
+const webSecArray = [
+  "Redux Toolkit",
+  "Axios",
+  "React-Router",
+  "MVC",
+  "Stripe",
+  "Commerce-JS",
+  "Mongoose",
+  "Firebase Hosting",
+];
+const android = [
+  "Kotlin",
+  "Java",
+  "RoomDB",
+  "MVVM",
+  "Navigation Component",
+  "Retrofit",
+  "Coroutines",
+  "Firebase CloudStorage",
+];
+export { webMainArray };
+export { webSecArray };
+export { android };
+
 export default ProjectsData;

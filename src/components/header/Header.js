@@ -4,11 +4,11 @@ import CvSec from "./CvSec";
 import Typewriter from "react-ts-typewriter";
 import AnimationCanvas from "../UI/AnimationCanvas";
 import useScroll from "../../hooks/useScroll";
+import useWindowSize from "../../hooks/useWindowSize";
 
 const Header = () => {
   const scrollPosition = useScroll();
   let dynamicScale = 1.5 - scrollPosition / 180;
-
   if (scrollPosition > 265) {
     dynamicScale = 0;
   }
@@ -29,6 +29,7 @@ const Header = () => {
         </h1>
         <CvSec />
       </div>
+
       <div className="spheres">
         <AnimationCanvas scale={dynamicScale} />
       </div>

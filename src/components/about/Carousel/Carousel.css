@@ -1,0 +1,67 @@
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+  height: 8vh;
+  z-index: -5;
+}
+
+.carousel-wrap {
+  position: absolute;
+  width: 200%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  display: flex;
+  left: 40%;
+}
+
+.carousel-wrap-r {
+  position: absolute;
+  width: 200%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  left: 40%;
+}
+
+.carousel {
+  /* height: 10vh; */
+  width: 50%;
+  display: flex;
+  align-content: space-evenly;
+  justify-content: space-around;
+}
+.carousel h4 {
+  width: auto;
+  font-size: 22px;
+  color: var(--color-grey-black);
+  padding: 0 1rem;
+}
+.animate {
+  animation: spinnin 35s linear infinite;
+  animation-play-state: running;
+}
+.animate-r {
+  animation: spinnin-r 35s linear infinite;
+  animation-play-state: running;
+}
+/* .animate:hover {
+  cursor: pointer;
+  animation-play-state: paused;
+} */
+
+@keyframes spinnin {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@keyframes spinnin-r {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100%;
+  }
+}

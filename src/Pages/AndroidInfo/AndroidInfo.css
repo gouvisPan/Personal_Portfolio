@@ -52,7 +52,7 @@
   margin-bottom: 10rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
   .presentation-container {
     margin-left: 2rem;
     margin-right: 2rem;

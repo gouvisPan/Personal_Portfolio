@@ -5,7 +5,6 @@ import Projects from "../../components/projects/Projects";
 import Contact from "../../components/contact/Contact";
 import useWindowSize from "../../hooks/useWindowSize";
 import Nav from "../../components/nav/Nav";
-import { useInView } from "framer-motion";
 
 const Home = () => {
   const [height, width] = useWindowSize();
@@ -14,8 +13,8 @@ const Home = () => {
     <div className="App">
       {width > 600 ? <Nav /> : ""}
       <Header />
-      <About />
       <Projects />
+      <About />
       <Contact />
     </div>
   );

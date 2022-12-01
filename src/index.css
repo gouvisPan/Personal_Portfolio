@@ -165,7 +165,7 @@ img {
   object-fit: cover;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
   .container {
     margin: 0;
     width: 100vh;

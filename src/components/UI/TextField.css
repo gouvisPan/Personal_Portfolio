@@ -54,7 +54,7 @@ textarea {
   height: 2.4rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
   .text-field-content {
     flex-direction: column;
   }

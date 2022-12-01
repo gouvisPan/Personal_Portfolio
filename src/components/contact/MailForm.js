@@ -26,6 +26,7 @@ const MailForm = (props) => {
       .required("Message is required"),
     email: Yup.string().email("Email is invalid").required("Email is Required"),
   });
+  const onClear = () => {};
 
   const onSubmit = (e) => {
     setErrorState(false);
@@ -57,12 +58,14 @@ const MailForm = (props) => {
         name: "",
         email: "",
         message: "",
+        subject: "",
       }}
       validationSchema={validate}
-      onSubmit={(values) => {
-        console.log(values);
+      onSubmit={(values, { resetForm }) => {
         onSubmit();
+        resetForm({ values: "" });
       }}
+      onClear={onClear}
     >
       {(formik) => (
         <div className="form-container">
@@ -99,13 +102,13 @@ const MailForm = (props) => {
               <button type="submit" className="submit-btn">
                 Send
               </button>
-              <button onClick={props.onClose} className="closing-btn">
+              <button onClick={formik.resetForm} className="closing-btn">
                 Nevermind
               </button>
             </div>
           </Form>
           {successState && <Success message="E-mail sent!" />}
-          {/* <Error message="Something went wrong" /> */}
+          {errorState && <Error message="Something went wrong" />}
         </div>
       )}
     </Formik>
