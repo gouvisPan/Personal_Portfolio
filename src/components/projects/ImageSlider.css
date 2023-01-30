@@ -1,5 +1,6 @@
 .slider-container {
   height: 25rem;
+  min-height: 10rem;
   width: fit-content;
   min-width: 40rem;
   gap: 0;

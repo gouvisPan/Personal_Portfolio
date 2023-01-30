@@ -18,6 +18,13 @@ import h4 from "../assets/hypecoach/profile.png";
 import h5 from "../assets/hypecoach/register.png";
 import h6 from "../assets/hypecoach/working-out.png";
 
+import ht1 from "../assets/habit-tracker/home.png";
+import ht2 from "../assets/habit-tracker/profile.png";
+import ht3 from "../assets/habit-tracker/statistics.png";
+import htm1 from "../assets/habit-tracker/homeM.png";
+import htm2 from "../assets/habit-tracker/profileM.png";
+import htm3 from "../assets/habit-tracker/statisticsM.png";
+
 const p1 = {
   name: "3D-Commerce",
   description:
@@ -45,6 +52,26 @@ const p1 = {
   android: false,
 };
 const p2 = {
+  name: "Habit Tracker",
+  description:
+    "A simple habit tracker web app, that integrades user management functionality and CRUD operations." +
+    " The app tracks user's habits on a weekly basis and displays adherence statistics for each habit.",
+  technologiesUsed: [
+    "Typescript",
+    "React",
+    "Redux-toolkit",
+    "React-Router",
+    "SASS",
+    "Firebase Auth",
+    "Firestore",
+  ],
+  githubLink: "https://github.com/gouvisPan/habit-tracker",
+  demoLink: "https://technical-assessment-dev.web.app/",
+  imgs: [ht1, ht2, ht3, [htm1, htm2, htm3]],
+  android: false,
+};
+
+const p3 = {
   name: "Crypto Live",
   description:
     "A cryptocurrency stats and information monitoring application. The webApp fetches various stats  for " +
@@ -57,7 +84,7 @@ const p2 = {
   android: false,
 };
 
-const p3 = {
+const p4 = {
   name: "HypeCoach",
   description:
     "A complete hypertrophy coach for Android devices. The applications gathers biometric data from the user" +
@@ -81,7 +108,7 @@ const p3 = {
   android: true,
 };
 
-const p4 = {
+const p5 = {
   name: "Weather App",
   description:
     'Fetching and displaying data from the "openWeather API", for every city around the globe',
@@ -96,6 +123,7 @@ const ProjectsData = [p1, p2, p3, p4];
 const webMainArray = [
   "Javascript",
   "React",
+  "Typescript",
   "CSS",
   "SCSS",
   "NodeJS",
@@ -122,7 +150,9 @@ const android = [
   "Retrofit",
   "Coroutines",
   "Firebase CloudStorage",
+  "React-Native",
 ];
+
 export { webMainArray };
 export { webSecArray };
 export { android };

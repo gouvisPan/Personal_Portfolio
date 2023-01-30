@@ -33,7 +33,7 @@
 .carousel h4 {
   width: auto;
   font-size: 22px;
-  color: var(--color-grey-black);
+  color: var(--color-grey-darker);
   padding: 0 1rem;
 }
 .animate {

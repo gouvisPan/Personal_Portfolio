@@ -3,11 +3,11 @@ import ProjectsData from "../../data/ProjectsData";
 import ProjectSlide from "./ProjectSlide";
 
 const ProjectSlider = () => {
-  const [p1, p2, p3] = ProjectsData;
+  const projects = ProjectsData;
 
   return (
     <div>
-      {[p1, p2, p3].map((project, i) => (
+      {projects.map((project, i) => (
         <ProjectSlide
           key={project.githubLink}
           name={project.name}

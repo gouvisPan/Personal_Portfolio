@@ -48,9 +48,6 @@ section {
   height: 100vh;
 }
 
-.carousels {
-}
-
 @media (max-width: 600px) {
   .about_card {
     font-size: 1.3rem;
