@@ -88,7 +88,7 @@ const p4 = {
   name: "HypeCoach",
   description:
     "A complete hypertrophy coach for Android devices. The applications gathers biometric data from the user" +
-    " and provides a personalized workout and diet plan. Both plans adopt dynamically to the user's needs by utilizing his/hers" +
+    " and provides a personalized workout and diet plan. Both plans adapt dynamically to the user's needs by utilizing his/hers" +
     " weekly feedback.",
   technologiesUsed: [
     "Kotlin",
